@@ -1,0 +1,26 @@
+<%- model_class = User -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => [:'helpers.titles.new', 'New %{model}'], :model => model_class.model_name.human.titleize %></h1>
+</div>
+
+
+<!--<form method="post" id="new_user" class="new_user" action="/users" accept-charset="UTF-8"><div style="margin:0;padding:0;display:inline"><input type="hidden" value="✓" name="utf8"><input type="hidden" value="N49zKNHweEEAHceGQUQOGcVBJhccnBPl+baeLyfcU84=" name="authenticity_token"></div>
+  <p>
+    <label for="user_email">Email</label><br>
+    <input type="text" size="30" name="user[email]" id="user_email">
+  </p>
+  <p>
+    <label for="user_password">Password</label><br>
+    <input type="password" size="30" name="user[password]" id="user_password">
+  </p>
+  <p>
+    <label for="user_password_confirmation">Password confirmation</label>
+    <input type="password" size="30" name="user[password_confirmation]" id="user_password_confirmation">
+  </p>
+  <p class="button"><input type="submit" value="Create User" name="commit"></p>
+</form>-->
+
+
+
+
+<%= render :partial => 'form' %>
