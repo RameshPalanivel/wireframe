@@ -36,7 +36,7 @@ gem 'jquery-rails'
 # Deploy with Capistrano
 # Capistrano stuff
   gem 'capistrano'
-  gem "capistrano-unicorn", "~> 0.1.10"
+  #gem "capistrano-unicorn", "~> 0.1.10"
   #gem 'capistrano-unicorn', :git => 'https://github.com/sosedoff/capistrano-unicorn.git', :branch => 'master', :require => false
 
 
