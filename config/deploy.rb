@@ -15,7 +15,10 @@ set :default_environment, {
 }
  
 # Source repository taken for deployments
-set :local_repository,  'ssh://dealsjg1@dealshikari.com:2082/home/dealsjg1/wireframe.git'
+set :location ,"208.91.198.231"
+set :branch, "master"
+set :scm_username, "RameshPalanivel"
+set :local_repository,  'ssh://dealsjg1@#{location}:2082/home/dealsjg1/wireframe.git'
 set :repository, '/home/dealsjg1/wireframe.git'
 set :scm, :git # You can set :scm explicitly or Capistrano will make an intelligent guess based on known version control directory names
 # Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
