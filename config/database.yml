@@ -5,10 +5,10 @@
 #   gem 'sqlite3'
 development:
   adapter: mysql2
-  database: dev_dealshikari #dealsjg1_development #dev_dealshikari
-  username: root #dealsjg1_amaanee #root
-  password: ramesh
-  host: localhost #208.91.198.231 #localhost
+  database: dealsjg1_development #dealsjg1_development #dev_dealshikari #dealsjg1_development #dev_dealshikari
+  username: dealsjg1_amaanee #dealsjg1 #root #dealsjg1_amaanee #root
+  password: amaanee2013 #ramesh
+  host: 208.91.198.231 #localhost #208.91.198.231 #localhost
   #pool: 5
   #timeout: 5000
 

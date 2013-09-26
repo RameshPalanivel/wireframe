@@ -4,16 +4,16 @@ server "208.91.198.231", :web, :app, :db, primary: true
 
 set :application, "wireframe"
 set :user, "dealsjg1"
-set :deploy_to, "/home/#{user}/#{application}"
+set :deploy_to, "/home/#{user}/public_html/#{application}"
 set :deploy_via, :remote_cache
 set :use_sudo, false
 
 set :scm, "git"
 #set :scm_command, "/opt/local/bin/git"
 #set :scm_command, "~/bin/git" 
-#set :repository, "https://github.com/RameshPalanivel/#{application}.git"
+set :repository, "https://github.com/RameshPalanivel/#{application}.git"
 
-set :repository, "git@github.com:RameshPalanivel/#{application}.git"
+#set :repository, "git@github.com:RameshPalanivel/#{application}.git"
 set :branch, "master"
 
 default_run_options[:pty] = true
