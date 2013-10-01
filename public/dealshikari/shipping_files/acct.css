@@ -1,0 +1,585 @@
+﻿#AcctCntr
+{
+	position: relative;
+	margin-top: 0px;
+	padding-bottom: 15px;
+}
+
+	#AcctCntr hr
+	{
+		width: 100%;
+		text-align: left;
+		margin-left: 0px;
+		margin-right: 0px;
+		height: 1px;
+		border-bottom: 0px;
+	}
+
+	#AcctCntr #TblAcctLinks #ColOneCntr, #AcctCntr #TblAcctLinks #ColTwoCntr
+	{
+		padding: 0px 5px 0px 0px;
+	}
+
+	#AcctCntr #TblAcctLinks #ColOne
+	{
+		width: 55%;
+		vertical-align: top;
+	}
+
+	#AcctCntr #TblAcctLinks #ColTwo
+	{
+		width: 45%;
+		vertical-align: top;
+		padding-top: 20px;
+		padding-left: 5px;
+	}
+
+	#AcctCntr #TblAcctLinks div
+	{
+		margin-bottom: 15px;
+	}
+
+	#AcctCntr #TblAcctLinks span#AuthStatus
+	{
+		font-weight: bold;
+	}
+
+	#AcctCntr #AcctCreditsCntr div
+	{
+		font-weight: bold;
+		padding-bottom: 10px;
+	}
+
+	#AcctCntr #AcctCreditsCntr #Details
+	{
+		font-weight: normal;
+		padding-bottom: 15px;
+	}
+
+	#AcctCntr #TblEmailFrm, #AcctCntr #TblPWFrm
+	{
+		width: 411px;
+	}
+
+	#AcctCntr #TblDenote, #AcctCntr #TblAddr
+	{
+		width: 100%;
+	}
+
+		#AcctCntr #TblDenote td
+		{
+			vertical-align: top;
+		}
+
+		#AcctCntr #TblDenote #ColButton
+		{
+			text-align: right;
+		}
+
+		#AcctCntr #TblAddr #HName, #AcctCntr #TblAddr .CName
+		{
+			width: 30%;
+		}
+
+		#AcctCntr #TblAddr #HAddress, #AcctCntr #TblAddr .IAddress
+		{
+			width: 40%;
+		}
+
+		#AcctCntr #TblAddr #HDelete, #AcctCntr #TblAddr #HUpdate, #AcctCntr #TblAddr #HEmpty, #AcctCntr #TblAddr .CDelete, #AcctCntr #TblAddr .CUpdate, #AcctCntr #TblAddr .CEmpty
+		{
+			width: 10%;
+			text-align: center;
+		}
+
+	#AcctCntr #AutoDel
+	{
+		width: 90%;
+		font-size: smaller;
+		padding: 5px 0px 10px 0px;
+	}
+
+	#AcctCntr #TblDenote, #AcctCntr #TblCC
+	{
+		width: 100%;
+	}
+
+	#AcctCntr #TblDenote
+	{
+		padding-bottom: 10px;
+	}
+
+		#AcctCntr #TblDenote td
+		{
+			vertical-align: top;
+		}
+
+		#AcctCntr #TblDenote #ColButton
+		{
+			text-align: right;
+		}
+
+	#AcctCntr #TblCC #HDelete, #AcctCntr #TblCC #HUpdate, #AcctCntr #TblCC .CDelete, #AcctCntr #TblCC .CUpdate
+	{
+		width: 12%;
+		text-align: center;
+	}
+
+	#AcctCntr #QHelp
+	{
+		padding-top: 10px;
+		text-align: center;
+	}
+
+	#AcctCntr #TblSubs, #AcctCntr #TblSubs #YourSubsCntr #TblYourSubs
+	{
+		width: 100%;
+	}
+
+	#AcctCntr .Notice
+	{
+		padding-top: 20px;
+	}
+
+		#AcctCntr .Notice h5.alert, #AcctCntr #TblSubs #YourSubsCntr #TblYourSubs #YLCntr
+		{
+			padding-bottom: 20px;
+		}
+
+	#AcctCntr #TblSubs td
+	{
+		vertical-align: top;
+	}
+
+		#AcctCntr #TblSubs td.ButtonRow
+		{
+			padding: 20px 0px 20px 0px;
+		}
+
+			#AcctCntr #TblSubs td.ButtonRow span
+			{
+				font-weight: bold;
+			}
+
+	#AcctCntr #TblSubs #YourSubsCntr
+	{
+		padding: 0px;
+		border: 1px solid #CBCBCB;
+	}
+
+	#AcctCntr #TblSubs div.ButtonRow
+	{
+		padding: 20px 9px 20px 9px;
+		background-color: #F2F2F4;
+	}
+
+	#AcctCntr #TblSubs #YourSubsCntr #TblYourSubs
+	{
+		padding: 5px;
+	}
+
+	#AcctCntr #TblSubs .updateLabel
+	{
+		font-weight: bold;
+	}
+
+	#AcctCntr #TblSubs #YourSubsCntr #TblYourSubs h3
+	{
+		margin: 0px;
+		padding: 0px;
+	}
+
+	#AcctCntr #TblSubs #YourSubsCntr #TblYourSubs td
+	{
+		vertical-align: top;
+	}
+
+	#AcctCntr #TblSubs #YourSubsCntr #TblYourSubs #Privacy
+	{
+		margin-left: 10px;
+	}
+
+	#AcctCntr #TblSubs #YourSubsCntr #TblYourSubs hr
+	{
+		border: 0px;
+		Height: 1px;
+	}
+
+	#AcctCntr #TblSubs #YourSubsCntr #TblYourSubs .Freq
+	{
+		padding-left: 10px;
+		font-weight: normal;
+		font-size: 80%;
+	}
+
+	#AcctCntr #TblPrograms
+	{
+		width: 97%;
+		padding-bottom: 15px;
+	}
+
+		#AcctCntr #TblPrograms td
+		{
+			vertical-align: top;
+		}
+
+		#AcctCntr #TblPrograms a
+		{
+			display: block;
+		}
+
+		#AcctCntr #TblPrograms #CardName
+		{
+			display: inline;
+			padding-left: 10px;
+			font-weight: bold;
+		}
+
+		#AcctCntr #TblPrograms #AcctNum .alert
+		{
+			font-size: 85%;
+		}
+
+	#AcctCntr #TblOrders th
+	{
+		text-align: center;
+	}
+
+	#AcctCntr #TblOrderHistory th
+	{
+		text-align: left;
+		padding-left: .75em;
+		background-color: #b8ccd0;
+	}
+
+	#AcctCntr #TblOrderHistory td
+	{
+		padding-left: .75em;
+	}
+
+	#AcctCntr .pagination
+	{
+		font-size: .9em;
+		width: 100%;
+		text-align: right;
+		padding: 3px;
+	}
+
+	#AcctCntr #OrderProblemMessage
+	{
+		padding: .75em;
+		border: solid thin red;
+		vertical-align: top;
+		clear: both;
+		margin: 10px;
+		width: 95%;
+	}
+
+		#AcctCntr #OrderProblemMessage a
+		{
+			text-decoration: none;
+			color: Blue;
+		}
+
+		#AcctCntr #OrderProblemMessage #ErrorIcon
+		{
+			position: relative;
+			margin-right: .5em;
+		}
+
+	#AcctCntr #OrderDetails
+	{
+		width: 97%;
+		border: solid 1px black;
+		padding: .75em;
+		position: relative;
+		float: left;
+	}
+
+		#AcctCntr #OrderDetails div, #OrderDetails p, #OrderDetails td
+		{
+			font-size: .98em;
+		}
+
+		#AcctCntr #OrderDetails a
+		{
+			text-decoration: none;
+			color: Blue;
+		}
+
+		#AcctCntr #OrderDetails p#OrderStatus
+		{
+			clear: both;
+			font-weight: normal;
+			font-size: 1.2em;
+		}
+
+		#AcctCntr #OrderDetails #print_btn
+		{
+			position: absolute;
+			top: 9px;
+			right: 9px;
+		}
+
+		#AcctCntr #OrderDetails label
+		{
+			font-weight: bold;
+			padding: 0;
+			display: block;
+		}
+
+		#AcctCntr #OrderDetails .separator
+		{
+			padding: 0px;
+			background-color: #D6E1E4;
+			clear: both;
+			float: right;
+			height: 20px;
+			width: 60px;
+			margin-right: 5px;
+		}
+
+		#AcctCntr #OrderDetails .suborder
+		{
+			padding: .5em .5em .75em .5em;
+			background-color: #b8ccd0;
+			clear: both;
+		}
+
+			#AcctCntr #OrderDetails .suborder div, .suborder td, .suborder th
+			{
+				vertical-align: top;
+			}
+
+			#AcctCntr #OrderDetails .suborder .prologue
+			{
+				padding-bottom: .5em;
+				clear: both;
+			}
+
+				#AcctCntr #OrderDetails .suborder .prologue h3
+				{
+					display: inline;
+				}
+
+			#AcctCntr #OrderDetails .suborder .shipping
+			{
+				background-color: #D6E1E4;
+				float: left;
+				padding: 0.2em 0.5em 0.5em 0.5em;
+				width: 210px;
+				min-height: 123px;
+			}
+
+			#AcctCntr #OrderDetails .suborder .lineitems
+			{
+				background-color: White;
+				float: right;
+				width: 390px;
+			}
+
+				#AcctCntr #OrderDetails .suborder .lineitems th, .lineitems td
+				{
+					text-align: left;
+					padding: .5em;
+				}
+
+				#AcctCntr #OrderDetails .suborder .lineitems td.qty
+				{
+					width: 30px;
+					text-align: center;
+				}
+
+				#AcctCntr #OrderDetails .suborder .lineitems td.desc
+				{
+					width: 300px;
+					text-align: left;
+				}
+
+				#AcctCntr #OrderDetails .suborder .lineitems td.price
+				{
+					width: 60px;
+					text-align: right;
+					background-color: #D6E1E4;
+				}
+
+			#AcctCntr #OrderDetails .suborder .epilogue
+			{
+				clear: both;
+			}
+
+		#AcctCntr #OrderDetails div#payment
+		{
+			float: left;
+			vertical-align: top;
+			padding: 5px 10px 10px 10px;
+			width: 150px;
+			font-size: .95em;
+		}
+
+		#AcctCntr #OrderDetails #payment label, #payment p
+		{
+			font-size: .98em;
+		}
+
+		#AcctCntr #OrderDetails div#totals
+		{
+			float: right;
+			text-align: right;
+			padding-top: 0px;
+			margin-right: 5px;
+		}
+
+		#AcctCntr #OrderDetails #totals table, #totals th, #totals td
+		{
+			text-align: right;
+			padding: 0 2px;
+			font-size: .98em;
+		}
+
+			#AcctCntr #OrderDetails #totals table#fsa
+			{
+				width: 300px;
+				padding: 10px 2px 10px 0px;
+			}
+
+		#AcctCntr #OrderDetails #totals .amt
+		{
+			padding: 0px 6px 0px 22px;
+			background-color: #D6E1E4;
+		}
+
+		#AcctCntr #OrderDetails #totals #subtotal td, #subtotal th
+		{
+			padding-top: 10px;
+		}
+
+		#AcctCntr #OrderDetails #totals tr#grand_total
+		{
+			font-weight: bold;
+			font-size: 1em;
+		}
+
+		#AcctCntr #OrderDetails #totals #savings td, #savings th
+		{
+			color: red;
+			font-weight: bolder;
+			padding-bottom: 10px;
+		}
+
+		#AcctCntr #OrderDetails #commands
+		{
+			clear: both;
+			vertical-align: middle;
+			text-align: center;
+		}
+
+			#AcctCntr #OrderDetails #commands input
+			{
+				margin: 0px 5px 40px 5px; /* color: White; background-color: #047ec4; */
+			}
+
+	#AcctCntr #OrderDetails_Closing
+	{
+		width: 97%;
+		padding: 1em .5em 2em .5em;
+		font-size: .95em;
+		clear: both;
+	}
+
+		#AcctCntr #OrderDetails_Closing a
+		{
+			text-decoration: none;
+			color: Blue;
+		}
+
+.OrderDialog
+{
+	background-color: White;
+	border: thin solid black;
+	height: 330px;
+	left: 135px;
+	padding: 1em;
+	position: absolute;
+	top: 46px;
+	visibility: hidden;
+	width: 327px;
+	filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=5, OffY=5, Color= 'gray', Positive= 'true' );
+	text-justify: inter-word;
+	text-align: justify;
+}
+
+	.OrderDialog #close
+	{
+		border: 1px solid DarkGray;
+		color: Red;
+		float: right;
+		font-size: 1.5em;
+		font-weight: bold;
+		left: 12px;
+		padding: 0pt 1px;
+		position: relative;
+		top: -13px;
+		cursor: hand;
+	}
+
+	.OrderDialog h2
+	{
+		text-align: center;
+		clear: both;
+	}
+
+	.OrderDialog #buttons
+	{
+		text-align: center;
+	}
+
+		.OrderDialog #buttons input
+		{
+			margin: 5px;
+		}
+
+#ChkBillShipCntr .title
+{
+	margin: 40px 0px 35px 0px;
+	font-size: 160%;
+	text-align: left;
+}
+
+#ChkAcctCntr .title
+{
+	margin: 5px 0px 5px 0px;
+	font-size: 160%;
+	text-align: left;
+}
+
+#HPACntr
+{
+	padding: 0px 0px 0px 0px;
+}
+
+	#HPACntr table
+	{
+		width: 98%;
+	}
+
+	#HPACntr .Item
+	{
+		margin-top: 15px;
+	}
+
+		#HPACntr .Item .footnote
+		{
+			color: #333399;
+			font-size: 80%;
+		}
+
+		#HPACntr .Item a, #HPACntr .Item .Head
+		{
+			font-weight: bold;
+		}
+
+#AcctCntr .alert, #AcctCntr .label
+{
+	width: 50%;
+}

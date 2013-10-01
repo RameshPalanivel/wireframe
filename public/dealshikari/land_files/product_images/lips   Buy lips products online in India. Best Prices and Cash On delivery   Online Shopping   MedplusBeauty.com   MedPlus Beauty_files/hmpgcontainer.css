@@ -1,0 +1,121 @@
+/*@import url('reset.css');*/
+/*Sliding Text and Icon Menu Style*/
+.sti-menu{
+	width:700px;
+	position:relative;
+	margin:0 auto;
+}
+.sti-menu li{
+	float:left;
+	width:210px;
+	height:280px;
+	margin:10px;
+}
+.sti-menu li a{
+	display:block;
+	overflow:hidden;
+	background:#D9D9D9;
+	text-align:center;
+	height:100%;
+	width:100%;
+	position:relative;
+	text-decoration:none;
+	/*
+	-moz-box-shadow:3px 3px 3px #f9f9f9;
+	-webkit-box-shadow:3px 3px 3px #f9f9f9;
+	box-shadow:3px 3px 3px #f9f9f9;
+	*/
+	
+	border-radius:6px;
+	-moz-border-radius:6px;
+	-khtml-border-radius:6px;
+	-webkit-border-radius:6px;
+	border:1px solid #ccc;
+	-webkit-transition: all .6s;-moz-transition: all .6s;-ms-transition: all .6s;-o-transition: all .6s;transition: all .6s;
+}
+.sti-menu li a:hover{
+	background:#fff;
+	color:#fff;
+	/*
+	-moz-box-shadow:3px 3px 3px #e3e3e3;
+	-webkit-box-shadow:3px 3px 3px #e3e3e3;
+	box-shadow:3px 3px 3px #e3e3e3;
+	*/
+	-webkit-box-shadow: 3px 3px 3px #696563;
+    -moz-box-shadow: 3px 3px 3px #696563;
+    -ms-box-shadow: 3px 3px 3px #696563;
+    -o-box-shadow: 3px 3px 3px #696563;
+    box-shadow: 3px 3px 3px #696563;
+}
+.sti-menu li a h2{
+	color:#333;
+	font-family: "Arial Narrow", Arial, sans-serif; 
+	font-size:1.5em;
+	font-weight:bold;
+	text-transform:uppercase;
+	position:absolute;
+	padding:10px;
+	width:180px;
+	top:170px;
+	left:5px;
+}
+.sti-menu li a h3{
+	font-family: Arial,Helvetica, sans-serif; 
+	font-size:10px;
+	font-style:italic;
+	color: #666;
+	position:absolute;
+	top:248px;
+	left:0px;
+	width:95%;
+	text-align:right;
+	line-height:24px;
+}
+.sti-icon{
+	width:150px;
+	height:150px;
+	position:absolute;
+	background-position:top left;
+	background-repeat:no-repeat;
+	background-color:transparent;
+	left:30px;
+	top:20px;
+}
+.sti-icon-arw{
+	width:9px;
+	height:12px;
+	background-position:center left;
+	background-repeat:no-repeat;
+	background-color:transparent;
+}
+.sti-icon-prdstext{
+	width:71px;
+	height:30px;
+	position:absolute;
+	background-position:center left;
+	background-repeat:no-repeat;
+	background-color:transparent;
+	left:90px;
+	top:25px;
+}
+.sti-icon-beauty{
+	background-image:url(../images/beauty.png);
+}
+.sti-icon-personal{
+	background-image:url(../images/personal.png);
+}
+.sti-icon-mother{
+	background-image:url(../images/baby.png);
+}
+.sti-icon-nutrition{
+	background-image:url(../images/nutrition.png);
+}
+.sti-icon-healthcare{
+	background-image:url(../images/health.png);
+}
+.sti-icon-arrow{
+	background-image:url(../images/arw.png);
+}
+.sti-icon-prdstxt{
+	background-image:url(../images/products_txt.png);
+}

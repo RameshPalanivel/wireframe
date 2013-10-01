@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<!-- saved from url=(0065)http://127.0.0.1:3000/password_resets/-SOzwWq1NpjS9pLSBWcDFA/edit -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Shik</title>
+  <link href="./pass_reset_files/application.css" media="screen" rel="stylesheet" type="text/css">
+  <script src="./pass_reset_files/jquery.js" type="text/javascript"></script>
+<script src="./pass_reset_files/jquery_ujs.js" type="text/javascript"></script>
+<script src="./pass_reset_files/home.js" type="text/javascript"></script>
+<script src="./pass_reset_files/password_resets.js" type="text/javascript"></script>
+<script src="./pass_reset_files/sessions.js" type="text/javascript"></script>
+<script src="./pass_reset_files/users.js" type="text/javascript"></script>
+<script src="./pass_reset_files/application.js" type="text/javascript"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta content="authenticity_token" name="csrf-param">
+<meta content="Tt5VrJyewYf0XTVAVosG0jLes4bDYs9Vf2QmSKBEyqE=" name="csrf-token">
+  <style type="text/css">
+
+body {
+	
+    font-family: Verdana;
+    font-size: small;
+    text-align: left;
+}
+	/*font: 1em/150% Arial, Helvetica, sans-serif;*/
+
+a {
+	color: #004B91;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+/*h1 {
+	font: bold 36px/100% Arial, Helvetica, sans-serif;
+}*/
+
+/************************************************************************************
+STRUCTURE
+*************************************************************************************/
+#pagewrap {
+	padding: 5px;
+	width: 555px;
+	margin: 20px auto;
+	
+	
+}
+#header {
+	height: 180px;
+}
+#content {
+	width: 600px;
+	float: left;
+}
+#sidebar {
+	width: 300px;
+	float: right;
+}
+#footer {
+	clear: both;
+	padding: 0px;
+	width: 555px;
+	margin: 20px auto;
+	border-top: 1px solid #C9E1F4;
+  
+   
+    position: relative;
+   
+}
+
+/************************************************************************************
+MEDIA QUERIES
+*************************************************************************************/
+/* for 980px or less */
+@media screen and (max-width: 980px) {
+	
+	#pagewrap {
+		width: 94%;
+	}
+	#content {
+		width: 65%;
+	}
+	#sidebar {
+		width: 30%;
+	}
+   
+}
+
+/* for 700px or less */
+@media screen and (max-width: 700px) {
+
+	#content {
+		width: auto;
+		float: none;
+	}
+	#sidebar {
+		width: auto;
+		float: none;
+	}
+
+}
+
+/* for 480px or less */
+@media screen and (max-width: 480px) {
+
+	#header {
+		height: auto;
+	}
+	h1 {
+		font-size: 24px;
+	}
+	#sidebar {
+		display: none;
+	}
+
+}
+
+/* border & guideline (you can ignore these) */
+#content {
+	background: #f8f8f8;
+}
+#sidebar {
+	background: #f0efef;
+}
+#header, #content, #sidebar {
+	margin-bottom: 5px;
+}
+/*#pagewrap, #header, #content, #sidebar, #footer {
+	border: solid 1px #C9E1F4;
+}*/
+
+.ap_pagelet {
+	border: solid 1px #C9E1F4;
+	border: 1px solid #C9E1F4;
+    border-radius: 5px 5px 5px 5px;
+    padding: 11px 27px;
+    position: relative;
+    width: 510px;
+    
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+    width: auto;
+}
+
+h1 {
+    font-size: 108%;
+    font-weight: 700;
+}
+h2, h3, h4, h5, h6 {
+   font-size: 80%;
+    font-weight: 700;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #E47911;}
+    .right {
+    text-align: right;
+}
+.ap_form_table .ap_input_label {
+    white-space: nowrap;
+}
+.form_data {
+    float: left;
+    padding-bottom: 11px;
+    width: 100%;
+}
+.form_data label {
+   color: #000000;
+    float: left;
+    font-size: 13px;
+    font-weight: 700;
+    padding-top: 1px;
+    text-align: right;
+    white-space: nowrap;
+    width: 170px;
+}
+.form_data .input_text {
+    border: 1px solid #CFCFCF;
+    border-radius: 5px 5px 5px 5px;
+    height: 22px;
+    width: 262px;
+}
+
+body{font-family: Verdana;}
+.forget{margin-left: 185px;}
+.remember {
+    padding-left: 0px;
+    padding-top: 5px;
+}
+.remember {
+    float: left;
+}
+
+.button input{ margin-left: 189px;}
+.form_data label span{color:red;}
+ 
+</style>
+</head>
+
+<body style="">
+
+<!--<div id="user_nav">
+    <a href="http://127.0.0.1:3000/sign_up">Register</a> or
+    <a href="http://127.0.0.1:3000/log_in">Sign In</a>
+</div>-->
+
+
+<div id="pagewrap">
+
+<form accept-charset="UTF-8" action="http://127.0.0.1:3000/password_resets/-SOzwWq1NpjS9pLSBWcDFA" class="ap_pagelet" id="edit_user_1" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"><input name="_method" type="hidden" value="put"><input name="authenticity_token" type="hidden" value="Tt5VrJyewYf0XTVAVosG0jLes4bDYs9Vf2QmSKBEyqE="></div>
+<h1>Amaanee.com Password Assistance</h1>
+	<h2>Create your new password.</h2>
+	<p>We'll ask you for this password when you place an order, check on an order's status, and access other account information. </p>
+
+<div class="form_data">
+	<label for="article_title">New Password<span>*</span>:</label>
+	<input id="user_password" name="user[password]" size="30" type="password">
+</div>
+<div class="form_data">
+	<label for="article_title">Reenter New Password<span>*</span>:</label>
+	<input id="user_password_confirmation" name="user[password_confirmation]" size="30" type="password">
+</div>
+<div class="actions">
+	<input name="commit" type="submit" value="Save Changes">
+</div>
+<p> <b>Secure password tips:</b>
+
+  </p><p>  Use at least 8 characters, a combination of numbers and letters is best.
+    Do not use the same password you have used with us previously.
+    Do not use dictionary words, your name, e-mail address, or other personal information that can be easily obtained.
+    Do not use the same password for multiple online accounts.
+
+</p>
+</form>
+
+</div>
+   <div id="footer">
+	<p>
+Conditions of Use Privacy Notice © 2013, Amaanee.com, Inc. or its affiliates
+</p>
+	</div>
+
+
+</body></html>

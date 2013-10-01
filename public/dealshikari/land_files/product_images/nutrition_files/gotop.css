@@ -1,0 +1,61 @@
+#BackToTop {
+	float: left;
+	display:none;
+    color: #eee;
+    margin: 0 5px;
+    padding: 3px;
+    text-decoration: none;
+    border: 1px solid #1b1b1b;
+    font: bold 12px Arial, Helvetica;
+	position:fixed;
+	top:90%;
+	right:5px;
+	text-transform:uppercase;
+	z-index:999;
+    
+	
+	
+	/*********************/
+	/** CSS3 properties **/
+	/*********************/
+	/** Background gradient **/
+	background-color: #1b1b1b;
+    background-image: -moz-linear-gradient(#1b1b1b, #444);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#1b1b1b), to(#444));
+    background-image: -webkit-linear-gradient(#1b1b1b, #444);
+    background-image: -o-linear-gradient(#1b1b1b, #444);
+    background-image: -ms-linear-gradient(#1b1b1b, #444);
+    background-image: linear-gradient(#1b1b1b, #444);
+	
+	/** box Radius **/
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+	
+	/** Text Shadow **/
+    text-shadow: 0 -1px 0 rgba(0,0,0,.8);
+	
+	/** Box shadow **/
+   -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.3), 0 3px 0 rgba(0, 0, 0, 0.7), 0 2px 2px rgba(0, 0, 0, 0.5), 0 1px 0 rgba(0, 0, 0, 0.5) inset;
+    -webkit-box-shadow: 0 1px 0 rgba(0, 0,0, 0.3), 0 3px 0 rgba(0, 0, 0, 0.7), 0 2px 2px rgba(0, 0, 0, 0.5), 0 1px 0 rgba(0, 0, 0, 0.5) inset;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.3), 0 1px 0 rgba(0, 0, 0, 0.7), 0 2px 2px rgba(0, 0, 0, 0.5), 0 1px 0 rgba(0, 0, 0, 0.5) inset;
+}
+
+#BackToTop span
+{
+    display: block;
+    padding: 4px 5px;
+    cursor: pointer;
+	
+	/*********************/
+	/** CSS3 properties **/
+	/*********************/
+	/** Background gradient **/
+    background-color: #1b1b1b;
+    background-image: -moz-linear-gradient(#1b1b1b, #333);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#1b1b1b), to(#333));
+    background-image: -webkit-linear-gradient(#1b1b1b, #333);
+    background-image: -o-linear-gradient(#1b1b1b, #333);
+    background-image: -ms-linear-gradient(#1b1b1b, #333);
+    background-image: linear-gradient(#1b1b1b, #333);
+}

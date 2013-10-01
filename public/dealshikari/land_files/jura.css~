@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'Jura';
+        src: url('/assets/fonts/jura/a19f536a40d8911d72ca770d9aa79be9/75b9fb442b928fcfa7e3d9668455e860/JuraBook.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+      }
+
+@font-face {
+    font-family: 'Jura';
+        src: url('/assets/fonts/jura/a19f536a40d8911d72ca770d9aa79be9/c0a43e225695977177ae79b0c383d9f4/JuraDemiBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+      }
+
+@font-face {
+    font-family: 'Jura';
+        src: url('/assets/fonts/jura/a19f536a40d8911d72ca770d9aa79be9/636d3dac53dffe0023a68f90abacf4c1/JuraLight.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+      }
+
+@font-face {
+    font-family: 'Jura';
+        src: url('/assets/fonts/jura/a19f536a40d8911d72ca770d9aa79be9/aae5ca4a88b36840a839aa05f5cc62bf/JuraMedium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+      }
+

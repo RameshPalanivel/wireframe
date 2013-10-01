@@ -1,0 +1,204 @@
+/*-------LOGIN STARTS HERE -------*/
+
+/* Login Container (default to float:right) */
+#loginContainer {
+    position:relative;
+    float:right;
+    font-size:10px;
+    
+}
+#loginContainer a{color:#333;text-decoration:none;}
+#loginContainer a:hover{color:#000;}
+
+#loginContainer a.activelink{font-weight:bold;color:#f9f9f9;text-decoration:none;text-shadow:1px 1px #000;text-transform:capitalize;}
+#loginContainer a.activelink:hover{color:#fff;}
+
+/* Login Button */
+#loginButton { 
+    display:inline-block;
+    float:right;
+    position:relative;
+    z-index:30;
+    line-height:30px;
+    cursor:pointer;
+    margin-right:3px;
+}
+
+/* Login Button Text */
+#loginButton span {
+    color:#fff; 
+    font-size:11px; 
+    font-weight:bold; 
+    text-shadow:1px 1px #000; 
+    padding:0px 25px 0px 10px;
+    background:url(../images/loginArrow_new.png) no-repeat right 6px;
+    display:block
+}
+
+#loginButton:hover {
+    background:none;
+}
+
+/* Login Box */
+#loginBox {
+    position:absolute;
+    top:30px;
+    right:0;
+    display:none;
+    z-index:29;
+}
+
+/* If the Login Button has been clicked */    
+#loginButton.active {
+    height:30px;
+}
+
+#loginButton.active span {
+    background-position:right -76px;
+}
+
+/* A Line added to overlap the border */
+#loginButton.active em {
+    position:absolute;
+    width:100%;
+    background:#D9D9D9;
+    bottom:-1px;
+}
+
+/* Login Form */
+#loginForm {
+    width:248px; 
+    margin-top:-0px;
+    margin-right:3px;
+    background:#f9f9f9;
+    border:1px solid #d9d9d9;
+    -webkit-box-shadow: 3px 3px 3px #696563;
+    -moz-box-shadow: 3px 3px 3px #696563;
+    -ms-box-shadow: 3px 3px 3px #696563;
+    -o-box-shadow: 3px 3px 3px #696563;
+    box-shadow: 3px 3px 3px #696563;
+}
+
+#loginForm fieldset {
+    margin:0;
+    display:block;
+    border:0;
+    padding:0;
+}
+
+fieldset#body {
+    background:#fff;
+    padding:0px 10px;
+    margin:0;
+}
+
+#loginForm #checkbox {
+    width:auto;
+    margin:1px 9px 0 0;
+    float:left;
+    padding:0;
+    border:0;
+    *margin:-3px 9px 0 0; /* IE7 Fix */
+}
+
+#body label {
+    color:#333;
+    margin:5px 0 0 0;
+    display:block;
+    float:left;
+    line-height:22px;
+	text-transform:capitalize;
+	text-align:left;
+}
+
+#loginForm #body fieldset label {
+    display:block;
+    float:none;
+    margin:0 0 0px 0;
+}
+
+/* Default Input */
+#loginForm .input {
+    width:100%;
+    border:1px solid #BBBABC;
+    color:#555;
+    font-size:11px;
+    height:28px;
+    margin-bottom:5px;
+}
+
+/* Sign In Button */
+#loginForm #login{
+    width:auto;
+    float:right;
+    background-color: #333;
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#555),to(#020202));
+    background-image: -webkit-linear-gradient(top,#555,#020202);
+    background-image: -moz-linear-gradient(top,#555,#020202);
+    background-image: -ms-linear-gradient(top,#555,#020202);
+    background-image: -o-linear-gradient(top,#555,#020202);
+    background-image: linear-gradient(top,#555,#020202);
+    color:#fff;
+    line-height:28px;height:28px;
+    font:bold 10px/28px Arial, Helvetica, sans-serif;
+    text-transform:uppercase;
+    text-shadow:1px 0px #333;
+    border:1px solid #333;
+    -webkit-box-shadow: 0px 0px 3px #f9f9f9;
+    -moz-box-shadow: 0px 0px 3px #f9f9f9;
+    -ms-box-shadow: 0px 0px 3px #f9f9f9;
+    -o-box-shadow: 0px 0px 3px #f9f9f9;
+    box-shadow: 0px 0px 3px #f9f9f9;
+    margin:0px 2px 10px 0;
+    cursor:pointer;
+    padding:0px 10px;
+}
+#loginForm #go{
+    width:auto;
+    float:right;
+    background-color: #fe4349;
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#fe4349),to(#cc0000));
+    background-image: -webkit-linear-gradient(top,#fe4349,#cc0000);
+    background-image: -moz-linear-gradient(top,#fe4349,#cc0000);
+    background-image: -ms-linear-gradient(top,#fe4349,#cc0000);
+    background-image: -o-linear-gradient(top,#fe4349,#cc0000);
+    background-image: linear-gradient(top,#fe4349,#cc0000);
+    color:#fff;
+    line-height:28px;height:28px;
+    font:bold 10px/28px Arial, Helvetica, sans-serif;
+    text-transform:capitalize;
+    border:1px solid #fd4147;
+    -webkit-box-shadow: 0px 0px 3px #b3b3b3;
+    -moz-box-shadow: 0px 0px 3px #b3b3b3;
+    -ms-box-shadow: 0px 0px 3px #b3b3b3;
+    -o-box-shadow: 0px 0px 3px #b3b3b3;
+    box-shadow: 0px 0px 3px #b3b3b3;
+    margin:0px 2px 10px 0;
+    cursor:pointer;
+    padding:0px 10px;
+}
+/* Forgot your password */
+#loginForm span {
+    text-align:left;
+    display:block;
+    padding:0px;
+    line-height:30px;
+    text-shadow:1px 1px #fff;
+    border-top:1px solid #000;
+    padding:0 10px;
+    cursor:pointer;
+}
+
+#loginForm span a {
+    text-shadow:1px 1px #fff;
+    font-size:10px;padding:0px 10px;
+    text-align:left;
+}
+
+input:focus {
+    outline:none;
+}
+.forgotpwd {
+	height:70px;width:92%
+}
+.button-litblk {font-size:1em}

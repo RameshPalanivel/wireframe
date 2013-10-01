@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<!-- saved from url=(0029)http://127.0.0.1:3000/sign_up -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Shik</title>
+  <link href="./registeration_files/application.css" media="screen" rel="stylesheet" type="text/css">
+  <script src="./registeration_files/jquery.js" type="text/javascript"></script>
+<script src="./registeration_files/jquery_ujs.js" type="text/javascript"></script>
+<script src="./registeration_files/home.js" type="text/javascript"></script>
+<script src="./registeration_files/password_resets.js" type="text/javascript"></script>
+<script src="./registeration_files/sessions.js" type="text/javascript"></script>
+<script src="./registeration_files/users.js" type="text/javascript"></script>
+<script src="./registeration_files/application.js" type="text/javascript"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta content="authenticity_token" name="csrf-param">
+<meta content="Tt5VrJyewYf0XTVAVosG0jLes4bDYs9Vf2QmSKBEyqE=" name="csrf-token">
+  <style type="text/css">
+
+body {
+	
+    font-family: Verdana;
+    font-size: small;
+    text-align: left;
+}
+	/*font: 1em/150% Arial, Helvetica, sans-serif;*/
+
+a {
+	color: #004B91;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+/*h1 {
+	font: bold 36px/100% Arial, Helvetica, sans-serif;
+}*/
+
+/************************************************************************************
+STRUCTURE
+*************************************************************************************/
+#pagewrap {
+	padding: 5px;
+	width: 555px;
+	margin: 20px auto;
+	
+	
+}
+#header {
+	height: 180px;
+}
+#content {
+	width: 600px;
+	float: left;
+}
+#sidebar {
+	width: 300px;
+	float: right;
+}
+#footer {
+	clear: both;
+	padding: 0px;
+	width: 555px;
+	margin: 20px auto;
+	border-top: 1px solid #C9E1F4;
+  
+   
+    position: relative;
+   
+}
+
+/************************************************************************************
+MEDIA QUERIES
+*************************************************************************************/
+/* for 980px or less */
+@media screen and (max-width: 980px) {
+	
+	#pagewrap {
+		width: 94%;
+	}
+	#content {
+		width: 65%;
+	}
+	#sidebar {
+		width: 30%;
+	}
+   
+}
+
+/* for 700px or less */
+@media screen and (max-width: 700px) {
+
+	#content {
+		width: auto;
+		float: none;
+	}
+	#sidebar {
+		width: auto;
+		float: none;
+	}
+
+}
+
+/* for 480px or less */
+@media screen and (max-width: 480px) {
+
+	#header {
+		height: auto;
+	}
+	h1 {
+		font-size: 24px;
+	}
+	#sidebar {
+		display: none;
+	}
+
+}
+
+/* border & guideline (you can ignore these) */
+#content {
+	background: #f8f8f8;
+}
+#sidebar {
+	background: #f0efef;
+}
+#header, #content, #sidebar {
+	margin-bottom: 5px;
+}
+/*#pagewrap, #header, #content, #sidebar, #footer {
+	border: solid 1px #C9E1F4;
+}*/
+
+.ap_pagelet {
+	border: solid 1px #C9E1F4;
+	border: 1px solid #C9E1F4;
+    border-radius: 5px 5px 5px 5px;
+    padding: 11px 27px;
+    position: relative;
+    width: 510px;
+    
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+    width: auto;
+}
+
+h1 {
+    font-size: 108%;
+    font-weight: 700;
+}
+h2, h3, h4, h5, h6 {
+   font-size: 80%;
+    font-weight: 700;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #E47911;}
+    .right {
+    text-align: right;
+}
+.ap_form_table .ap_input_label {
+    white-space: nowrap;
+}
+.form_data {
+    float: left;
+    padding-bottom: 11px;
+    width: 100%;
+}
+.form_data label {
+   color: #000000;
+    float: left;
+    font-size: 13px;
+    font-weight: 700;
+    padding-top: 1px;
+    text-align: right;
+    white-space: nowrap;
+    width: 170px;
+}
+.form_data .input_text {
+    border: 1px solid #CFCFCF;
+    border-radius: 5px 5px 5px 5px;
+    height: 22px;
+    width: 262px;
+}
+
+body{font-family: Verdana;}
+.forget{margin-left: 185px;}
+.remember {
+    padding-left: 0px;
+    padding-top: 5px;
+}
+.remember {
+    float: left;
+}
+
+.button input{ margin-left: 189px;}
+.form_data label span{color:red;}
+ 
+</style>
+</head>
+
+<body style="">
+
+<!--<div id="user_nav">
+    <a href="./registeration_files/registeration.html">Register</a> or
+    <a href="http://127.0.0.1:3000/log_in">Sign In</a>
+</div>-->
+
+
+<div id="pagewrap">
+
+
+<form accept-charset="UTF-8" action="home.html" class="ap_pagelet" id="new_user" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"><input name="authenticity_token" type="hidden" value="Tt5VrJyewYf0XTVAVosG0jLes4bDYs9Vf2QmSKBEyqE="></div>
+<h1>Registration</h1>
+
+<h2>New to Dealshikari.com? Register Below.</h2>
+<p>
+
+	</p><div class="form_data">
+		<label for="article_title">My name is<span>*</span>:</label>
+		<input id="user_name" name="user[name]" size="30" type="text">
+	</div>
+<p></p>
+<p>
+	</p><div class="form_data">
+		<label for="article_title">My email address is<span>*</span>:</label>
+		<input id="user_email" name="user[email]" size="30" type="text">
+	</div>
+<p></p>
+<p>
+	</p><div class="form_data">
+		<label for="article_title">My mobile number is<span>*</span>:</label>
+		<input id="user_phone" name="user[phone]" size="30" type="text">
+	</div>
+<p></p>
+<h2>Protect your information with a password </h2>
+<p>
+	This will be your only Dealshikari.com password.
+</p>
+<p>
+	</p><div class="form_data">
+		<label for="article_title">Enter new password is<span>*</span>:</label>
+		<input id="user_password" name="user[password]" size="30" type="password">
+	</div>
+<p></p>
+<p>
+	</p><div class="form_data">
+		<label for="article_title">Try it again<span>*</span>:</label>
+		<input id="user_password_confirmation" name="user[password_confirmation]" size="30" type="password">
+	</div>
+<p></p>
+
+<h2>Personnel Details</h2>
+<p>
+	</p><div class="form_data">
+		<label for="article_title">First Name<span>*</span>:</label>
+		<input id="user_first_name" name="user[first_name]" size="30" type="text">
+	</div>
+<p></p>
+<p>
+	</p><div class="form_data">
+		<label for="article_title">Last Name<span>*</span>:</label>
+		<input id="user_last_name" name="user[last_name]" size="30" type="text">
+	</div>
+<p></p>
+<p>
+	</p><div class="form_data">
+		<label for="article_title">Date of Birth<span>*</span>:</label>
+		<input id="user_date_of_birth" name="user[date_of_birth]" size="30" type="text">
+	</div>
+<p></p>
+<p>
+	</p><div class="form_data">
+		<label for="article_title">Gender<span>*</span>:</label>
+		<input id="user_gender" name="user[gender]" size="30" type="text">
+	</div>
+<p></p>
+<p>
+	</p><div class="form_data">
+		<label for="article_title">Phone (Optional):</label>
+		<input id="user_phone" name="user[phone]" size="30" type="text">
+	</div>
+<p></p>
+<p>
+	</p><div class="form_data">
+		<label for="article_title">House No &amp; Details<span>*</span>:</label>
+		<input id="user_house_no_and_details" name="user[house_no_and_details]" size="30" type="text">
+	</div>
+<p></p>
+<p>
+	</p><div class="form_data">
+		<label for="article_title">Street Details<span>*</span>:</label>
+		<input id="user_street_details" name="user[street_details]" size="30" type="text">
+	</div>
+<p></p>
+<p>
+	</p><div class="form_data">
+		<label for="article_title">Area<span>*</span>:</label>
+		<input id="user_area" name="user[area]" size="30" type="text">
+	</div>
+<p></p>
+
+<p>
+	</p><div class="form_data">
+		<label for="article_title">Residential Complex<span>*</span>:</label>
+		<input id="user_residential_complex" name="user[residential_complex]" size="30" type="text">
+	</div>
+<p></p>
+<p>
+	</p><div class="form_data">
+		<label for="article_title">Land Mark<span>*</span>:</label>
+		<input id="user_landmark" name="user[landmark]" size="30" type="text">
+	</div>
+<p></p>
+<p>
+	</p><div class="form_data">
+		<label for="article_title">City<span>*</span>:</label>
+		<input id="user_city" name="user[city]" size="30" type="text">
+	</div>
+<p></p>
+<p>
+	</p><div class="form_data">
+		<label for="article_title">State<span>*</span>:</label>
+		<input id="user_state" name="user[state]" size="30" type="text">
+	</div>
+<p></p>
+<p>
+	</p><div class="form_data">
+		<label for="article_title">Postal Code<span>*</span>:</label>
+		<input id="user_postal_code" name="user[postal_code]" size="30" type="text">
+	</div>
+<p></p>
+<p>
+	</p><div class="form_data">
+		<label for="article_title">Fax:</label>
+		<input id="user_fax" name="user[fax]" size="30" type="text">
+	</div>
+<p></p>
+<p>
+	</p><div class="form_data">
+		<label for="article_title">Address (Optional):</label>
+		<input id="user_address" name="user[address]" size="30" type="text">
+	</div>
+<p></p>
+
+<p>
+</p><h1>Terms of Use and Privacy Statement</h1>
+<input name="user[status]" type="hidden" value="1"><input checked="checked" id="user_status" name="user[status]" type="checkbox" value="0">
+ Yes, I have read and accept the AMAANEE Photo Online Terms of Use, Amaanee/pharmacy Online Terms of Use and Privacy Statement. *
+<p></p>
+<!--<h2>Billing Information</h2>
+<p>  Billing address is the same as my default address.</p>-->
+<p class="button">
+	<input name="commit" type="submit" value="Create User">
+</p>
+<p>	By creating an account, you agree to Amanee.com's Conditions of Use and Privacy Notice.</p>
+</form>
+
+</div>
+   <div id="footer">
+	<p>
+Conditions of Use Privacy Notice © 2013, Amaanee.com, Inc. or its affiliates
+</p>
+	</div>
+
+
+</body></html>

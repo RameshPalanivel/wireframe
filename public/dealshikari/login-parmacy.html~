@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!-- saved from url=(0028)http://localhost:3000/log_in -->
+<html>
+	<head>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Shik</title>
+		<link href="land_files/login.css" media="screen" rel="stylesheet" type="text/css">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta content="authenticity_token" name="csrf-param">
+		<meta content="p/GS/jcD/k/R8nMeZUtN/+uAqutPQ0KDIxKmEShAyq8=" name="csrf-token">
+
+	</head>
+
+	<body style="">
+
+		<form action="message_one.html" class="ap_pagelet">
+<h1>Login Pharmacy</h1>
+			
+
+			<div>
+                          <h2>What is your e-mail address?</h2>
+				<label class="desc" id="title3" for="Field3"> My e-mail address is: </label>
+				<div>
+					<input id="Field3" name="Field3" type="email" spellcheck="false" value="" maxlength="255" tabindex="3">
+				</div>
+			</div>
+
+			<h2>Do you have an Dealshikari.com password? </h2>
+
+			<div>
+				<label class="desc" id="title3" for="Field3"> I have a password: </label>
+				<div>
+					<input id="Field3" name="Field3" type="password" spellcheck="false" value="" maxlength="255" tabindex="3">
+				</div>
+			</div>
+
+			<div>
+				<fieldset>
+					<div class="forget">
+						<a href="password_reset.html">Forgotten password?</a>
+					</div>
+
+					<div>
+						<div>
+							<input id="Field6" name="Field6" type="checkbox" value="First Choice" tabindex="8">
+							<p class="choice">
+								Remember Me
+							</p>
+						</div>
+
+				</fieldset>
+			</div>
+
+			<div>
+				<div>
+					<input id="saveForm" name="saveForm" type="submit" value="Submit">
+				</div>
+			</div>
+
+<!--<div class="foot_mesg"> -->
+<h2>Terms of Use and Privacy Statement</h2>
+</p>Conditions of Use Privacy Notice © 2013, Dealshikari.com, its affiliates</p><!--</div>-->
+
+		</form>
+<!--<div class="foot_mesg"> 
+<h2>Terms of Use and Privacy Statement</h2>
+Conditions of Use Privacy Notice © 2013, Dealshikari.com, its affiliates</div>-->
+	</body>
+</html>

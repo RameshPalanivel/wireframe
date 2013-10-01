@@ -1,0 +1,114 @@
+
+<!-- saved from url=(0363)http://t.tellapart.com/hif?p=92YFN15FcnSWpb8JPv7LR2yDE0cLAAEAAAAQLZU5xLcrAkUasDmMZIunJAsAAgAAABCRx9DiVoJnXr_IisRNVBcsCgADAAABP8yIGPsPAAQLAAAACQAAAAMxNTAAAAACNDQAAAACOTkAAAADMTIxAAAAAjc0AAAAAzExNgAAAAMxMTAAAAADMTE5AAAAAzExOAsABQAAAAxnTUlWWFBPakh3T0sMAAYIAAIAAAAEAgAIAQIACQACAAoAAgALAQQADb_mPb4sy7iXBgAOAAACAA8AAgARAAIAEgAADwAHCwAAAAAIAAgAAAABAA==&tms=1373526038507 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"></head><body>
+<script type="text/javascript">
+// Maximum time allowed for pixels to load.
+var MAX_PIXEL_LOAD_TIME = 3000;
+// Ensures no more pixels are loaded after MAX_PIXEL_LOAD_TIME by removing src
+// attribute.
+setTimeout(function(){
+  var images = document.getElementsByTagName("img");
+  var img;
+  for (var i = 0, il = images.length; i < il; i++) {
+    img = images[i];
+    img.onload = null;
+    img.removeAttribute("src");
+  }
+}, MAX_PIXEL_LOAD_TIME);
+
+function setCookie(k,v) {
+  var ex = new Date();
+  ex.setFullYear(ex.getFullYear() + 1);
+  document.cookie = k + "=" + v + "; expires=" + ex.toUTCString() + "; Path=/;"
+                    + " Domain=t.tellapart.com;"
+}
+function getCookie(k) {
+  var a = document.cookie.split(";");
+  for (var i = 0; i < a.length; i++) {
+    var n = a[i].indexOf("=");
+    var k1 = a[i].substr(0, n);
+    var v = a[i].substr(n + 1);
+    if (k == k1.replace(/^\s+|\s+$/g,"")){
+      return v;
+    }
+  }
+}
+function addPixel(s, p, sep) {
+  var l = [];
+  if (s) {
+    l = s.split(sep);
+  }
+  for (var i = 0; i < l.length; i++) {
+    if (l[i] == p) {
+      return s;
+    }
+  }
+  l.push(p);
+  return l.join(sep);
+}
+function pixelOnLoad(p) {
+  var pd = getCookie("__cmbPD");
+  setCookie("__cmbPD", addPixel(pd, p, "/"));
+}
+function pixelListOnLoad(p) {
+  for (i=0; i < p.length; i++) {
+    pixelOnLoad(p[i])
+  }
+}
+function dclkOnLoad(p) {
+  var iframes = document.getElementsByName("google_conversion_frame");
+  if (iframes && iframes.length == 1) {
+    var iframe = iframes[0];
+    var onload = iframe.onload;
+    iframe.onload = function() { if (onload) onload(); pixelListOnLoad(p); };
+
+    iframe.name = "google_conversion_frame_loaded";
+    return;
+  }
+  var images = document.getElementsByTagName("img");
+  var i;
+  var img;
+  for (i = 0; i < images.length; i++) {
+    img = images[i];
+    if ((img.src.indexOf("www.googleadservices.com") >= 0 ||
+        img.src.indexOf("googleads.g.doubleclick.net") >= 0) && !img.name) {
+      var onload = img.onload;
+      img.onload = function() { if (onload) onload(); pixelListOnLoad(p); };
+      img.name = "google_conversion_img_" + p;
+      return;
+    }
+  }
+}
+
+setCookie("__cmbPI", "92YFN15FcnSWpb8JPv7LR2yDE0cLAAEAAAAQLZU5xLcrAkUasDmMZIunJAsAAgAAABCRx9DiVoJnXr_IisRNVBcsCgADAAABP8yIGPsPAAQLAAAACQAAAAMxNTAAAAACNDQAAAACOTkAAAADMTIxAAAAAjc0AAAAAzExNgAAAAMxMTAAAAADMTE5AAAAAzExOAsABQAAAAxnTUlWWFBPakh3T0sMAAYIAAIAAAAEAgAIAQIACQACAAoAAgALAQQADb_mPb4sy7iXBgAOAAACAA8AAgARAAIAEgAADwAHCwAAAAAIAAgAAAABAA==");
+setCookie("__cmbPD", "");
+</script>
+<script type="text/javascript">
+function chainloadpixels(l, i) {
+  if (i >= l.length) return;
+  var id = l[i][0];
+  var src = l[i][1];
+  var img = new Image();
+  img.onload = function() {
+    pixelOnLoad(id);
+    chainloadpixels(l, i+1);
+  };
+  img.src = src;
+  // Add img element to DOM so we can remove its src attribute upon timeout to
+  // abort loading.
+  document.body.appendChild(img);
+}
+</script>
+<img onload="pixelOnLoad(&#39;44&#39;);" border="0" width="1" height="1">
+<img onload="pixelOnLoad(&#39;74&#39;);" border="0" width="1" height="1">
+<img onload="pixelOnLoad(&#39;118&#39;);" border="0" width="1" height="1">
+<img onload="pixelOnLoad(&#39;116&#39;);" border="0" width="1" height="1">
+<img onload="pixelOnLoad(&#39;99&#39;);" border="0" width="1" height="1">
+<img onload="pixelOnLoad(&#39;110&#39;);" border="0" width="1" height="1">
+<img onload="pixelOnLoad(&#39;150&#39;);" border="0" width="1" height="1">
+<script type="text/javascript">//<![CDATA[
+chainloadpixels([["119", "http://ad.yieldmanager.com/pixel?adv=734615&code=119&t=2"], ["121", "http://ad.yieldmanager.com/cms/v1?esig=1~57657515d012ca260f041c2cb21669abfc392eb0&nwid=10000736089&sigv=1"]], 0);
+//]]></script><img>
+<script type="text/javascript">var req_time = new Date().getTime() - 1373526038507
+document.cookie = "__cmbTmf=" + req_time + "; expires=Thu, 18-Jul-2013 07:00:39 GMT; Path=/; Domain=.tellapart.com"</script>
+<img></body></html>

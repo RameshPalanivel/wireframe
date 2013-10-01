@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<!-- viewport meta to reset iPhone inital scale -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script src="./land_files/responsiveslides.min.js"></script>
+                <link rel="stylesheet" media="screen" href="http://openfontlibrary.org/face/jura" rel="stylesheet" type="text/css"/> 
+                <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+                <!--<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+                <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>-->
+		<link rel="stylesheet" media="screen" type="text/css" href="./land_files/CustomResponce.css">
+<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+
+<link rel="stylesheet" href="new_prescription/css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="new_prescription/css/bootstrap-responsive.min.css" type="text/css"/>
+    <link rel="stylesheet" media="screen" type="text/css" href="new_prescription/css/bootstrap.css">
+    <link rel="stylesheet" media="screen" type="text/css" href="new_prescription/css/bootstrap-responsive.css">
+    <script src="new_prescription/js/bootstrap.js"></script>
+
+		<link rel="stylesheet" media="screen" type="text/css" href="./land_files/drugstore.css">
+      <!--<link rel="stylesheet" media="screen" type="text/css" href="land_files/dist/css/bootstrap.css">-->
+		<link rel="stylesheet" media="screen" type="text/css" href="./land_files/assets.asp.css">
+		<link rel="stylesheet" type="text/css" href="./land_files/MenuImage.css">
+		<link rel="stylesheet" type="text/css" href="./land_files/style.css">
+
+		<title>Deal Shikari</title>
+
+		<!-- css3-mediaqueries.js for IE8 or older -->
+		<!--[if lt IE 9]>
+		<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+		<![endif]-->
+
+	</head>
+
+	<body>
+
+		<div id="pagewrap">
+
+		<!--Header with Menus Part Start-->
+<!--Header Portion Start-->
+<div id="header">
+
+	<div id="head1"><img src="land_files/logo.png" width="240" height="47" class="user-action" data-btn="home" data-pane="home" title="Logo" alt="Logo"/>
+	</div>
+	<div id="head2">
+		<!--Search form-->
+		<form action="search_list.html" class="search">
+			<input placeholder="Search..." class="searchTerm">
+			<input type="submit" class="searchButton">
+			<div style="display:inline;padding-left:5px;padding-top:10px;vertical-align:middle;">
+				<span class="ssearchIcon"><img src="land_files/search_btn.jpg" style="padding:0px;padding-top:2px;"></span>
+			</div>
+		</form>
+		<script>
+			$('.searchButton').on('click', function() {
+				alert('You clicked search button');
+			});
+		</script>
+		<!--Search form-->
+
+	</div>
+	<div id="head3">
+		<tbody>
+						<tr>
+						<tr>
+		<td class="gndsAccountRowLinks"><span style="color:black;">Welcome : </span>
+
+<a class="globalnavdsaccountlinks" rel="nofollow" title="your name" id="yourAccount" href="#"> Deal Shikari</a> 
+<!--or <a class="globalnavdsaccountlinks" rel="nofollow" title="your account" id="yourAccount" href="signin.html">SiginIn</a>-->
+
+<div class="gap"></div><a class="globalnavdsaccountlinks" rel="nofollow" title="your fav list" href="your_fav_list.html"><span class="globalnavdsheadericon"><img border="0" title="Your List" alt="Your List" src="land_files/icon_list.gif"></span> Your fav List</a><span class="gndsAccountLinkSeparator">|</span><a class="globalnavdsaccountlinks" rel="nofollow" title="your account" id="yourAccount" href="#">Your Account</a><span class="gndsAccountLinkSeparator">|</span><a class="globalnavdsaccountlinks" rel="nofollow" title="sign out" id="yourAccount" href="home.html">SignOut</a>
+						</tr>
+					</tbody>
+	</div>
+
+</div><!--Header end tag-->
+
+<!--Header Portion End-->
+
+<!--Navigation Menu start -->
+<div class="container">
+
+	<a class="toggleMenu" href="#">Menu</a>
+	
+		<ul class="nav">
+		  <li style="background-color:#C4CDE0;"><a href="home.html" style="color:black;">Home</a></li>		
+                  <li class=""><a href="prescription.html">New Prescription</a></li>
+		  <li class=""><a href="prescription.html">Shop</a></li>
+	         <li class="">
+<a href="#" class="parent">My Account</a>
+<ul>
+<li class=""><a href="#">Profile</a></li>
+<li class=""><a href="prescription_request_list.html">Requests</a></li>
+<li class=""><a href="#">Order History</a></li>
+</ul>
+</li>
+	</ul>
+</div>
+<!--Navigaation Menu end-->
+
+<!--script start-->
+<script type="text/javascript">
+	var ww = document.body.clientWidth;
+
+	$(document).ready(function() {
+		$(".nav li a").each(function() {
+			if ($(this).next().length > 0) {
+				$(this).addClass("parent");
+			};
+		})
+
+		$(".toggleMenu").click(function(e) {
+			e.preventDefault();
+			$(this).toggleClass("active");
+			$(".nav").toggle();
+		});
+		adjustMenu();
+	})
+
+	$(window).bind('resize orientationchange', function() {
+		ww = document.body.clientWidth;
+		adjustMenu();
+	});
+
+	var adjustMenu = function() {
+		if (ww < 768) {
+			$(".toggleMenu").css("display", "inline-block");
+			if (!$(".toggleMenu").hasClass("active")) {
+				$(".nav").hide();
+			} else {
+				$(".nav").show();
+			}
+			$(".nav li").unbind('mouseenter mouseleave');
+			$(".nav li a.parent").unbind('click').bind('click', function(e) {
+				// must be attached to anchor element to prevent bubbling
+				e.preventDefault();
+				$(this).parent("li").toggleClass("hover");
+			});
+		} else if (ww >= 768) {
+			$(".toggleMenu").css("display", "none");
+			$(".nav").show();
+			$(".nav li").removeClass("hover");
+			$(".nav li a").unbind('click');
+			$(".nav li").unbind('mouseenter mouseleave').bind('mouseenter mouseleave', function() {
+				// must be attached to li so that mouseleave is not triggered when hover over submenu
+				$(this).toggleClass('hover');
+			});
+		}
+	}
+
+</script>
+<!--script end-->
+
+<!--Navigation menu end-->
+
+                <!--Heade with Menu Part End-->
+
+
+
+
+	                <div id="content">
+<div class="container">
+<div class="row-fluid" id="pharmacy-mainarea">
+<div class="span12" id="mainarea">
+<div class="container">
+</div>
+<div class="screenlet">
+<h3>Your Requests</h3>
+<div class="screenlet-body">
+<table class="table">
+<tbody><tr>
+<th width="10%">
+<div><span style="white-space: nowrap;"><span class="hide-small">Request</span> Nbr</span></div>
+</th>
+<th width="20%">
+<div>Name</div>
+</th>
+<th width="40%" class="hide-small">
+<div>Instructions</div>
+</th>
+<th width="10%" class="hide-small">
+<div>Status</div>
+</th>
+<th width="20%" class="hide-small">
+<div>Request Date</div>
+</th>
+<th>
+</th>
+</tr>
+<tr>
+<td>
+<div>10081</div>
+</td>
+<td>
+<div>SriRam</div>
+</td>
+<td class="hide-small">
+<div>Shakthi,9894321678</div>
+</td>
+<td class="hide-small">
+<div>Submitted</div>
+</td>
+<td class="hide-small">
+<div><span style="white-space: nowrap;">2013-08-29 14:24:17.905</span></div>
+</td>
+<td align="right">
+<a class="btn btn-mini" href="prescription_request_review.html">View</a>
+</td>
+</tr>
+</tbody></table>
+</div>
+</div>
+</div></div></div>
+
+			</div><!--content tag end--->
+
+<!--- Side Bar Start--->
+			<div id="sidebar">
+			
+				<p>
+					ADVERTISEMENT
+				</p>
+	<a target="_blank" href="#"> <img src="land_files/images/Image.ashx.png" width="300" alt="Klematis" > </a>
+				
+				
+				<p>
+					ADVERTISEMENT
+				</p>
+<a target="_blank" href="#"> <img src="land_files/images/20.jpeg" width="300" alt="Klematis" > </a>
+<p>
+					ADVERTISEMENT
+				</p>
+<a target="_blank" href="#"> <img src="land_files/images/14.jpeg" width="300" alt="Klematis" > </a>
+
+
+			</div> <!---sidebar end tag-->
+
+			<!--- Side Bar End--->
+					<div id="footer">
+
+						<!--footer-->
+<div id="footer_big_block">
+<div class="block1">
+<div class="FooterLinksEmail"><div class="EmailExclusiveHeader">email exclusives</div><div class="EmailExclusiveBody">Sign up to receive special offers</div><div class="EmailExclusiveTextBox"><input title="enter your email address" onblur=" if(this.value=='')this.value='enter your email address';" onfocus="if(this.value=='enter your email address')this.value='';" autocomplete="off" name="2116" id="2116" value="enter your email address" class="EmailExclusive"></div><div class="FooterLinksEmailSignUp"><input type="hidden" id="btnSubmit" name="btnSubmit"><input type="image" alt="Sign up" value="btnSubmit" name="btnSubmit" src="/img/footer/button_signup.gif"> </div></div>
+<img border="0" width="237" height="78" alt="stay in the loop" src="http://pics1.ds-static.com/catimg/282211/052011_home_social_media.gif" usemap="#AutoMapLoop">
+</div>
+<div class="block2">
+<div class="FooterLinksColumnBody2"><div class="FooterLinksColumnHeader">services</div><div class="FooterLinks"><div class="FooterLinksElementsContainer"><a title="popular searches"  class="FooterLinksElements"><h4 class="footerLinks">popular searches</h4></a></div><div class="FooterLinksElementsContainer"><a title="product requests"  class="FooterLinksElements"><h4 class="footerLinks">product requests</h4></a></div><div class="FooterLinksElementsContainer"><a title="your list"  class="FooterLinksElements"><h4 class="footerLinks">your list</h4></a></div><div class="FooterLinksElementsContainer"><a title="destination health"  class="FooterLinksElements"><h4 class="footerLinks">destination health</h4></a></div><div class="FooterLinksElementsContainer"><a title="shop by brand"  class="FooterLinksElements"><h4 class="footerLinks">shop by brand</h4></a></div></div></div>
+</div>
+<div class="block3">
+<div class="FooterLinksColumnBody1"><div class="FooterLinksColumnHeader">support</div><div class="FooterLinks"><div class="FooterLinksElementsContainer">
+<a title="order status"  class="FooterLinksElements"><h4 class="footerLinks">order status</h4></a></div><div class="FooterLinksElementsContainer">
+<a title="store directory"  class="FooterLinksElements"><h4 class="footerLinks">store directory</h4></a></div><div class="FooterLinksElementsContainer">
+<a title="return policy"  class="FooterLinksElements"><h4 class="footerLinks">return policy</h4></a></div><div class="FooterLinksElementsContainer">
+<a title="help"  class="FooterLinksElements"><h4 class="footerLinks">help</h4></a></div><div class="FooterLinksElementsContainer"><a title="shipping information"  class="FooterLinksElements"><h4 class="footerLinks">shipping information</h4></a></div><div class="FooterLinksElementsContainer"><a title="contact us" class="FooterLinksElements"><h4 class="footerLinks">contact us</h4></a></div></div>
+</div>
+</div>
+</div>
+<p>Information on this site is provided for informational purposes only.  It is not meant to substitute for the advice provided by your own physician or other medical professional . You should not use the information contained herein for diagnosing or testing a health problem or disease, or prescribing any medication. If you have or suspect that you have a medical problem,promptly contact your health care provider. Information and statement regarding dietary supplements have not been evaluated by the Drug Administration and are not intented to diagnose. treat,cure,or prevent any disease. While we work hard to ensure that all product packaging and contact the manufacturer with any questions before using a product . We are not liable for inaccuracies or misstatements about products. Customer reviews are provided for informational purposes only. Customer reviews reflect the individual reviewer's results and experiences only and are not verified or endorsed by dealshikari.com . Actual result may vary amoung users. 
+</p>
+<p>Copyright 2013 dealshikari.com, All rights reserved.</p>
+<p>#1145 ,22nd Cross , BSK II nd Stage, Bangalore 590070  </p>
+</div>
+</div>
+						<!--footer-->
+
+							</div>
+					</div>
+
+	</body>
+</html>
+

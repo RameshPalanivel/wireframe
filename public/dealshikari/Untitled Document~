@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bootstrap 101 Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet" media="screen">
+<link rel="stylesheet" media="screen" type="text/css" href="./land_files">
+
+  </head>
+  <body>
+
+<div class="container">
+
+
+
+
+  <!--  <h1>Hello, world!</h1>-->
+  <div class="navbar">
+  <a class="navbar-brand" href="#">DealShikari</a>
+  <ul class="nav navbar-nav">
+    <li class="active"><a href="#">Store DashBoard</a></li>
+    <li><a href="#">My Profile</a></li>
+    <li><a href="my_inventory.html">My Inventory</a></li>
+<li><a href="sales.html">Sales</a></li>
+<li><a href="#">Reviews</a></li>
+<li><a href="#">Invoices</a></li>
+<li><a href="#">My Inventory</a></li>
+  </ul>
+ </div>
+
+<!--<div class="col-12 col-lg-8" style="border:1px solid green;">-->
+<!--Table-->
+<div class="bs-table-scrollable">
+      <table class="table table-bordered table-striped">
+        <thead>
+         <tr>
+	   <th style="width: 100px;">ID</th>
+           <th style="width: 200px;">Total Amount in Rs</th>
+           <th style="width: 200px;">Number of Items</th>
+           <!--<th style="width: 50px;">default</th>-->
+           <th>Description</th>
+         </tr>
+        </thead>
+        <tbody>
+         <tr>
+           <td>1</td>
+           <td>95000</td>
+            <td>3409</td>
+           <td>Description of cipla </td>
+         </tr>
+         <tr>
+           <td>2</td>
+           <td>19000</td>
+           <td>5007</td>
+           <td>Insert HTML into the tooltip. If false, jQuery's <code>text</code> method will be used to insert content into the DOM. Use text if you're worried about XSS attacks.</td>
+         </tr>
+         
+         
+        
+       
+        </tbody>
+      </table>
+    </div><!-- /.bs-table-scrollable -->
+<!--Table-->
+
+</div> <!---End tag of this col-12 col-lg-8--->
+<!--<div class="col-6 col-lg-4" style="border:1px solid red;">-->
+
+<!--<div class="row">
+  <div class="col-lg-3">
+      <!--<div class="thumbnail">-->
+<!--<p>
+					ADVERTISEMENT
+				</p>
+      <img src="land_files/sideads.jpg" alt="">
+<p>
+					ADVERTISEMENT
+				</p>
+ <img src="land_files/sideads.jpg" alt="">
+<p>
+					ADVERTISEMENT
+				</p>
+ <img src="land_files/sideads.jpg" alt="">
+    <!-- </div>-->
+<!--</div>-->
+<!--</div>-->
+
+
+
+
+
+<!--</div><!--End tag of this .col-6 .col-lg-4--->
+
+
+</div>
+
+
+
+
+
+
+    <!-- JavaScript plugins (requires jQuery) -->
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="dist/js/bootstrap.min.js"></script>
+
+    <!-- Optionally enable responsive features in IE8 -->
+    <script src="dist/js/respond.js"></script>
+
+  </body>
+</html>
+

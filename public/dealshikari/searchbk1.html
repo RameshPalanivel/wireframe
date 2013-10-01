@@ -1,0 +1,450 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<!-- viewport meta to reset iPhone inital scale -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script src="./land_files/responsiveslides.min.js"></script>
+		<!--<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+		<script src="./land_files/script.js"></script>-->
+		<link rel="stylesheet" media="screen" type="text/css" href="./land_files/CustomResponce.css">
+
+		<link rel="stylesheet" media="screen" type="text/css" href="./land_files/drugstore.css">
+
+		<link rel="stylesheet" media="screen" type="text/css" href="./land_files/assets.asp.css">
+		<link rel="stylesheet" type="text/css" href="./land_files/MenuImage.css">
+		<link rel="stylesheet" type="text/css" href="./land_files/style.css">
+
+		<title>Search Deal Shikari </title>
+
+		<!-- css3-mediaqueries.js for IE8 or older -->
+		<!--[if lt IE 9]>
+		<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+		<![endif]-->
+
+	</head>
+
+	<body>
+
+		<div id="pagewrap">
+
+			<!--CSS-->
+			<!--12-->
+			<div id="header">
+
+				<div id="head1"><img src="land_files/deals3.jpg" class="user-action" data-btn="home" data-pane="home" title="Logo" alt="Logo"/>
+				</div>
+				<div id="head2">
+					<tbody>
+						<tr>
+							<td align="left" class="gndsAccountsLinkForWelcome"><span class="gndsWelcome" id="Welcome">welcome: </span><a class="globalnavdsaccountlinks" rel="nofollow" title="sign in" id="sign in" href="/user/login.asp?from=%2fdefault.asp&amp;trx=newgn_signin_link&amp;trxp1=0&amp;trxp2=0&amp;trxp3=1%7c1">sign in</a><span class="gndsAccountLinkSeparator">|</span></td>
+						</tr></br>
+						<tr>
+							<td class="gndsAccountRowLinks"><a class="globalnavdsaccountlinks" rel="nofollow" title="your account" id="yourAccount" href="/user/modify_account.asp?catid=15805&amp;trx=newgn_15805">your account</a><span class="gndsAccountLinkSeparator">|</span><a class="globalnavdsaccountlinks" rel="nofollow" title="your list&trade;" href="/list.asp?catid=10782&amp;trx=newgn_10782"><span class="globalnavdsheadericon"><img border="0" title="Your List" alt="Your List" src="land_files/icon_list.gif"></span> your list&trade;</a><span class="gndsAccountLinkSeparator">|</span><a class="globalnavdsaccountlinks" title="your Rx" href="/templates/browse/default.asp?catid=292023">your Rx</a></td>
+						</tr>
+					</tbody>
+				</div>
+				<div id="head3">
+
+					<!--Search form-->
+					<form name="FRM_SEARCH" method="get" action="search_list.html">
+						<div class="head-search">
+
+							<input class="txtinput" type="text" id="txtSearchBox_1" title="search keyword" maxlength=30name="Ntt" value="search keyword" autocomplete="off"  onfocus="if(this.value=='search keyword')this.value='';" onblur=" if(this.value=='')this.value='search keyword';">
+							<!--<img src="http://leongaban.com/_stack/images/search_button.png" alt="search"/>-->
+							<button>
+								<img src="land_files/search_button.png" type="submit" />
+							</button>
+						</div>
+					</form>
+					<!--Search form-->
+
+				</div>
+				<div id="head4"><img src="land_files/dscm_button_checkout.gif" alt="checkout">
+				</div>
+
+				<!---->
+
+			</div><!--Header end tag-->
+			<!--13-->
+
+			<!--Navigation Menu start -->
+			<div class="container">
+
+				<a class="toggleMenu" href="#">Menu</a>
+				<ul class="nav">
+
+					<li>
+						<a href="#">Medicine & Health</a>
+						<ul>
+							<li>
+								<a href="#">Pain & Feaver Relief</a>
+
+							</li>
+
+						</ul>
+					</li>
+					<li>
+						<a href="#">Personnel Care</a>
+						<ul>
+							<li>
+								<a href="#">Mens</a>
+
+						</ul>
+					</li>
+					<li>
+						<a href="#">Beauty</a>
+						<ul>
+							<li>
+								<a href="#">Long</a>
+
+						</ul>
+					</li>
+					<li>
+						<a href="#">Baby & Mom</a>
+						<ul>
+							<li>
+								<a href="#">Casual</a>
+							</li>
+
+						</ul>
+					</li>
+					<li>
+						<a href="#">Vitamins</a>
+						<ul>
+							<li>
+								<a href="#">Mens</a>
+
+						</ul>
+					</li>
+					<li>
+						<a href="#">Diet&Fitness</a>
+						<ul>
+							<li>
+								<a href="#">Womens</a>
+
+						</ul>
+					</li>
+
+				</ul>
+			</div>
+
+			
+			<!--script start-->
+			<script type="text/javascript">
+				var ww = document.body.clientWidth;
+
+				$(document).ready(function() {
+					$(".nav li a").each(function() {
+						if ($(this).next().length > 0) {
+							$(this).addClass("parent");
+						};
+					})
+
+					$(".toggleMenu").click(function(e) {
+						e.preventDefault();
+						$(this).toggleClass("active");
+						$(".nav").toggle();
+					});
+					adjustMenu();
+				})
+
+				$(window).bind('resize orientationchange', function() {
+					ww = document.body.clientWidth;
+					adjustMenu();
+				});
+
+				var adjustMenu = function() {
+					if (ww < 768) {
+						$(".toggleMenu").css("display", "inline-block");
+						if (!$(".toggleMenu").hasClass("active")) {
+							$(".nav").hide();
+						} else {
+							$(".nav").show();
+						}
+						$(".nav li").unbind('mouseenter mouseleave');
+						$(".nav li a.parent").unbind('click').bind('click', function(e) {
+							// must be attached to anchor element to prevent bubbling
+							e.preventDefault();
+							$(this).parent("li").toggleClass("hover");
+						});
+					} else if (ww >= 768) {
+						$(".toggleMenu").css("display", "none");
+						$(".nav").show();
+						$(".nav li").removeClass("hover");
+						$(".nav li a").unbind('click');
+						$(".nav li").unbind('mouseenter mouseleave').bind('mouseenter mouseleave', function() {
+							// must be attached to li so that mouseleave is not triggered when hover over submenu
+							$(this).toggleClass('hover');
+						});
+					}
+				}
+
+			</script>
+			<!--script end-->
+
+			
+
+<!--Start-->
+
+<div id="blk_one">
+
+
+<td valign="top" class="GNRefine"><div class="shopby"><img alt="narrow by" style="width:191px; height:38px; border:none;" src="land_files/header_narrow_by.gif"></div><div class="srchRefine" style="margin-top;5px;"><nobr><input type="checkbox" onclick="OnLeftNavItemClickedInSearchResult('|FSA|FSA/HSA eligible','/search/search_results.asp?in_nav=1&amp;Ntk=All&amp;N=4294949189%2031&amp;Ntt=Be%20Koool&amp;srchtree=1')" class="cursor"> <a onclick="OnLeftNavItemClickedInSearchResult('|FSA|FSA/HSA eligible','/search/search_results.asp?in_nav=1&amp;Ntk=All&amp;N=4294949189%2031&amp;Ntt=Be%20Koool&amp;srchtree=1')" title="narrow by FSA/HSA eligible" class="ycursor">FSA/HSA eligible</a><span class="stats"> (3)</span><a title="" onclick="javascript:window.open('http://drugstore.custhelp.com/cgi-bin/drugstore.cfg/php/enduser/std_adp.php?p_faqid=128','dshelp','width=800,height=550,scrollbars=yes,resizable=yes,status=no,menubar=yes,toolbar=no,location=no'); return false;" target="dshelp" href="http://drugstore.custhelp.com/cgi-bin/drugstore.cfg/php/enduser/std_adp.php?p_faqid=128" class="underlineRemove"><img src="/img/icon_whats_this_Redesign.gif" alt="" title="whats this icon" style="margin-left:6px;border:0;"></a></nobr><br><nobr><input type="checkbox" onclick="OnLeftNavItemClickedInSearchResult('|Top Sellers|top sellers','/search/search_results.asp?in_nav=1&amp;Ntk=All&amp;N=4294949189%20180&amp;Ntt=Be%20Koool&amp;srchtree=1')" class="cursor"> <a onclick="OnLeftNavItemClickedInSearchResult('|Top Sellers|top sellers','/search/search_results.asp?in_nav=1&amp;Ntk=All&amp;N=4294949189%20180&amp;Ntt=Be%20Koool&amp;srchtree=1')" title="narrow by top sellers" class="ycursor">top sellers</a><span class="stats"> (3)</span></nobr><br><div class="dimension">category</div><a href="/search/search_results.asp?in_nav=1&amp;Ntk=All&amp;N=4294949189+4294893936&amp;Ntt=Be%20Koool&amp;srchtree=1" title="narrow category by first aid" class="ycursor"><h2 class="seoTag">first aid</h2></a><span class="stats"> (1)</span><br><a href="/search/search_results.asp?in_nav=1&amp;Ntk=All&amp;N=4294949189+4294893908&amp;Ntt=Be%20Koool&amp;srchtree=1" title="narrow category by pain &amp; fever relief" class="ycursor"><h2 class="seoTag">pain &amp; fever relief</h2></a><span class="stats"> (3)</span><br><div class="dimension">price range</div><input type="checkbox" onclick="OnLeftNavItemClickedInSearchResult('|OTC Price Range|$0 - $5','/search/search_results.asp?in_nav=1&amp;Ntk=All&amp;N=4294949189%2035&amp;Ntt=Be%20Koool&amp;srchtree=1')" class="cursor"> <a onclick="OnLeftNavItemClickedInSearchResult('|OTC Price Range|$0 - $5','/search/search_results.asp?in_nav=1&amp;Ntk=All&amp;N=4294949189%2035&amp;Ntt=Be%20Koool&amp;srchtree=1')" title="narrow price range by $0 - $5" class="ycursor">$0 - $5</a><span class="stats"> (3)</span><br><input type="checkbox" onclick="OnLeftNavItemClickedInSearchResult('|OTC Price Range|$5 - $10','/search/search_results.asp?in_nav=1&amp;Ntk=All&amp;N=4294949189%2036&amp;Ntt=Be%20Koool&amp;srchtree=1')" class="cursor"> <a onclick="OnLeftNavItemClickedInSearchResult('|OTC Price Range|$5 - $10','/search/search_results.asp?in_nav=1&amp;Ntk=All&amp;N=4294949189%2036&amp;Ntt=Be%20Koool&amp;srchtree=1')" title="narrow price range by $5 - $10" class="ycursor">$5 - $10</a><span class="stats"> (1)</span><br></div></td></div>
+
+
+<div id="right_blk">
+<div id="blk_two"><td style="padding:0px"><div class="SrchMsgHeader">results found for "Be Koool"</div></td></div>
+<div id="blk_three">
+
+<div class="main">
+				<div class="inner">
+
+
+<td class="GlobalPlistAdTemplateWrapperLeftTD"><div class="GlobalPlistAdTemplateWrapperLeftCol"><div style="display:block" class="itemGrid" id="gridView1"><div class="prodImg"><a href="/be-koool-migraine-soft-gel-sheets/qxp412516?catid=183101"><img width="150" vspace="2" hspace="5" height="150" border="0" alt="Be Koool Migraine Soft Gel Sheets" src="http://pics2.ds-static.com/prodimg/412516/150.JPG" title="Be Koool Migraine Soft Gel Sheets"></a></div><div class="info"><span class="description"><a href="/be-koool-migraine-soft-gel-sheets/qxp412516?catid=183101" class="oesLink"><span class="name">Be Koool - </span>Migraine Soft Gel Sheets - 6 Each</a></span><span class="customerReview"><a href="/be-koool-migraine-soft-gel-sheets/qxp412516?catid=183101&amp;tab=1#1" class="prodRatingLink"><img vspace="0" hspace="0" border="0" alt="Be Koool Migraine Soft Gel Sheets rates 5 out of 5 stars, from 1 customer review." src="land_files/rating_50.gif" title="Be Koool Migraine Soft Gel Sheets rates 5 out of 5 stars, from 1 customer review."><span class="prodReviewCount">(1)</span></a></span><span class="fsaSignage"><br><img align="top" alt="FSA eligible Migraine Soft Gel Sheets" src="land_files/icon_fsa.gif" title="FSA eligible Migraine Soft Gel Sheets"></span></div><div class="pricing"><span><div style="font-weight:bold;"><span class="PlistPrice">$5.49</span></div></span></div><div class="cart"><span class="ylist"><a class="xsmall" title="save Migraine Soft Gel Sheets to your list" target="_parent" href="/your-list/qxc10782?product=412516&amp;catid=183101">save to your list&trade;</a>»</span><span class="buyButton"><div style="font-weight:bold;"><a href="/cart.asp?product=412516&amp;catid=183101" title="Buy Be Koool Migraine Soft Gel Sheets"><img vspace="0" hspace="1" border="0" align="absmiddle" title="Buy Be Koool Migraine Soft Gel Sheets" alt="Buy Be Koool Migraine Soft Gel Sheets" src="land_files/button_addtobag.gif"></a></div></span></div></div><div style="display:block" class="itemGrid centerCol" id="gridView2"><div class="prodImg"><a href="/be-koool-soft-gel-sheets-for-adults/qxp147346?catid=183102"><img width="150" vspace="2" hspace="5" height="150" border="0" alt="Be Koool Soft Gel Sheets, For Adults" src="land_files/kool3.jpg" title="Be Koool Soft Gel Sheets, For Adults"></a></div><div class="info"><span class="description"><a href="/be-koool-soft-gel-sheets-for-adults/qxp147346?catid=183102" class="oesLink"><span class="name">Be Koool - </span>Soft Gel Sheets, For Adults - 4 ea</a></span><span class="customerReview"><a href="/be-koool-soft-gel-sheets-for-adults/qxp147346?catid=183102&amp;tab=1#1" class="prodRatingLink"><img vspace="0" hspace="0" border="0" alt="Be Koool Soft Gel Sheets, For Adults rates 4.5 out of 5 stars, from 19 customer reviews." src="/img/ratings/rating_45.gif" title="Be Koool Soft Gel Sheets, For Adults rates 4.5 out of 5 stars, from 19 customer reviews."><span class="prodReviewCount">(19)</span></a></span><span class="fsaSignage"><br><img align="top" alt="FSA eligible BeKool Adult 4s" src="land_files/icon_fsa.gif" title="FSA eligible BeKool Adult 4s"></span></div><div class="pricing"><span><div style="font-weight:bold;"><span class="PListPriceStrikeOut"><s>$4.21 </s></span><span style="font-weight:bold;" class="PlistOfferPrice">$3.99</span><span class="PlistSavePercent"><br>save 5%</span></div></span></div><div class="cart"><span class="ylist"><a class="xsmall" title="save BeKool Adult 4s to your list" target="_parent" href="/your-list/qxc10782?product=147346&amp;catid=183102">save to your list&trade;</a>»</span><span class="buyButton"><div style="font-weight:bold;"><a href="/cart.asp?product=147346&amp;catid=183102" title="Buy Be Koool Soft Gel Sheets, For Adults"><img vspace="0" hspace="1" border="0" align="absmiddle" title="Buy Be Koool Soft Gel Sheets, For Adults" alt="Buy Be Koool Soft Gel Sheets, For Adults" src="land_files/button_addtobag.gif"></a></div></span></div></div><div style="display:block" class="itemGrid lastCol" id="gridView3"><div class="prodImg"><a href="/be-koool-itch-relief-patches/qxp467251?catid=195677"><img width="150" vspace="2" hspace="5" height="150" border="0" alt="Be Koool Itch Relief Patches" src="land_files/kool2.JPG" title="Be Koool Itch Relief Patches"></a></div><div class="info"><span class="description"><a href="/be-koool-itch-relief-patches/qxp467251?catid=195677" class="oesLink"><span class="name">Be Koool - </span>Itch Relief Patches - 18 Each</a></span><span class="customerReview"><a href="/be-koool-itch-relief-patches/qxp467251?catid=195677&amp;tab=1#1" class="prodRatingLink"><img vspace="0" hspace="0" border="0" alt="Be Koool Itch Relief Patches rates 5 out of 5 stars, from 1 customer review." src="land_files/rating_50.gif" title="Be Koool Itch Relief Patches rates 5 out of 5 stars, from 1 customer review."><span class="prodReviewCount">(1)</span></a></span><span class="fsaSignage"></span></div><div class="pricing"><span><div style="font-weight:bold;"><span class="PListPriceStrikeOut"><s>$8.99 </s></span><span style="font-weight:bold;" class="PlistOfferPrice">$4.99</span><span class="PlistSavePercent"><br>save 44%</span></div></span></div><div class="cart"><span class="ylist"><a class="xsmall" title="save BeKoool Itch Relief Patch 18s to your list" target="_parent" href="/your-list/qxc10782?product=467251&amp;catid=195677">save to your list&trade;</a>»</span><span class="buyButton"><div style="font-weight:bold;"><a href="/cart.asp?product=467251&amp;catid=195677" title="Buy Be Koool Itch Relief Patches"><img vspace="0" hspace="1" border="0" align="absmiddle" title="Buy Be Koool Itch Relief Patches" alt="Buy Be Koool Itch Relief Patches" src="land_files/button_addtobag.gif"></a></div></span></div></div><div style="display:block" class="itemGrid" id="gridView4"><div class="prodImg"><div id="monetate_badge_88938_0_container" style="height: 0px; position: relative; width: 100%; z-index: 1;"><div id="monetate_badge_88938_0" style="left: 0px; position: absolute; top: -5px;"><img alt="" src="land_files/58840.png" usemap="#monetate_badge_88938_0Map" style="border: medium none; outline: medium none;"><map id="monetate_badge_88938_0Map" name="monetate_badge_88938_0Map"><area shape="rect" coords="0,0,150,150" style="outline: medium none;" href="http://www.drugstore.com/be-koool-soft-gel-sheets-for-kids/qxp88938?catid=183100"></map></div></div><a href="/be-koool-soft-gel-sheets-for-kids/qxp88938?catid=183100"><img width="150" vspace="2" hspace="5" height="150" border="0" alt="Be Koool Soft Gel Sheets for Kids" src="land_files/kool1.jpg" title="Be Koool Soft Gel Sheets for Kids"></a></div><div class="info"><span class="description"><a href="/be-koool-soft-gel-sheets-for-kids/qxp88938?catid=183100" class="oesLink"><span class="name">Be Koool - </span>Soft Gel Sheets for Kids - 4 ea</a></span><span class="customerReview"><a href="/be-koool-soft-gel-sheets-for-kids/qxp88938?catid=183100&amp;tab=1#1" class="prodRatingLink"><img vspace="0" hspace="0" border="0" alt="Be Koool Soft Gel Sheets for Kids rates 5 out of 5 stars, from 29 customer reviews." src="land_files/rating_50.gif" title="Be Koool Soft Gel Sheets for Kids rates 5 out of 5 stars, from 29 customer reviews."><span class="prodReviewCount">(29)</span></a></span><span class="fsaSignage"><br><img align="top" alt="FSA eligible BeKools Kids 4s" src="land_files/icon_fsa.gif" title="FSA eligible BeKools Kids 4s"></span></div><div class="pricing"><span><div style="font-weight:bold;"><span class="PlistPrice">$3.99</span></div></span></div><div class="cart"><span class="ylist"><a class="xsmall" title="save BeKools Kids 4s to your list" target="_parent" href="/your-list/qxc10782?product=88938&amp;catid=183100">save to your list&trade;</a>»</span><span class="buyButton"><div style="font-weight:bold;"><a href="/cart.asp?product=88938&amp;catid=183100" title="Buy Be Koool Soft Gel Sheets for Kids"><img vspace="0" hspace="1" border="0" align="absmiddle" title="Buy Be Koool Soft Gel Sheets for Kids" alt="Buy Be Koool Soft Gel Sheets for Kids" src="land_files/button_addtobag.gif"></a></div></span></div></div></div>   </td>	
+
+
+					<!--<div class="tile" style="border-left:none;">
+						<a href="www.google.co.in"><img src="land_files/091312-home-C2.jpg" alt="Beauty.com Shop Beauty.com for your favorite prestige brands."> </a>
+					</div>
+					<div class="tile" style="border-left:none;">
+						<a href="www.google.co.in"><img src="land_files/060313-home-d6-first-aid.jpg" alt="Beauty.com Shop Beauty.com for your favorite prestige brands."> </a>
+					</div>
+					<div class="tile" style="border-left:none;">
+						<a href="www.google.co.in"><img src="land_files/030112_home_D3.jpg" alt="Beauty.com Shop Beauty.com for your favorite prestige brands."> </a>-->
+
+
+
+
+					<!--</div>-->
+</div>
+</div>
+
+
+</div>
+<div id="blk_four">
+<p>
+					ADVERTISEMENT
+				</p>
+				<a target="_blank" href="klematis_big.htm"> <img src="land_files/sideads.jpg" alt="Klematis" > </a>
+				<p>
+					ADVERTISEMENT
+				</p>
+				<a target="_blank" href="klematis2_big.htm"> <img src="land_files/sideads.jpg" alt="Klematis"> </a>
+				<p>
+					ADVERTISEMENT
+				</p>
+				<a target="_blank" href="klematis3_big.htm"> <img src="land_files/sideads.jpg" alt="Klematis" > </a>
+
+</div>
+
+</div>
+
+<!--End-->
+
+
+
+
+
+							<div id="footer">
+
+						<!--footer-->
+
+						<div class="footmain">
+							<div class="footinner">
+								<div class="foottile">
+									<td valign="top" class="FooterLinksColumnEmailExclusive">
+									<div class="foot_first_box">
+										<form method="post" action="/survey/survey.asp?catid=93204" onsubmit="return validateEmail(document.getElementById('2116').value);" name="survey">
+											<div class="FooterLinksEmail">
+												<div class="EmailExclusiveHeader">
+													email exclusives
+												</div>
+												<div class="EmailExclusiveBody">
+													Sign up to receive special offers
+												</div>
+												<div class="EmailExclusiveTextBox">
+													<input title="enter your email address" onblur=" if(this.value=='')this.value='enter your email address';" onfocus="if(this.value=='enter your email address')this.value='';" autocomplete="off" name="2116" id="2116" value="enter your email address" class="EmailExclusive">
+												</div>
+												<div class="FooterLinksEmailSignUp">
+													<input type="hidden" id="btnSubmit" name="btnSubmit">
+													<input type="image" alt="Sign up" value="btnSubmit" name="btnSubmit" src="land_files/button_signup.gif">
+												</div>
+											</div>
+											<input type="hidden" value="yX2jEAHVirB08un32UPh9lhAzg83YPi2T5doKr0I4FM=" id="CSRFToken" name="CSRFToken">
+										</form>
+
+										<div style="height:10px;"></div>
+										<div class="FooterShowcase">
+											<div class="generalshowcase">
+												<div id="sc282211">
+													<div class="showcase">
+														<table >
+															<tbody>
+																<tr valign="top">
+																	<td>
+																	<map name="AutoMapLoop">
+																		<area coords="10,29,42,63" target="_blank" alt="become a fan on Facebook" shape="rect" href="http://www.facebook.com/drugstore.com">
+																		<area coords="53,29,83,62" target="_blank" alt="follow us on Twitter" shape="rect" href="http://www.twitter.com/drugstoredotcom">
+																		<area coords="92,31,123,62" target="_blank" alt="find us on Youtube" shape="rect" href="http://www.youtube.com/drugstoredotcom">
+																	</map><img src="http://pics1.ds-static.com/catimg/282211/052011_home_social_media.gif" alt="stay in the loop"></td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+												</div>
+
+											</div>
+										</div>
+									</td>
+								</div>
+							</div>
+							<div class="foottile">
+								<div class="FooterLinksColumnBody">
+									<div class="FooterLinksColumnHeader">
+										company info
+									</div>
+									<div class="FooterLinks">
+										<div class="FooterLinksElementsContainer">
+											<a title="our sites" href="/our-sites/qxc167610" class="FooterLinksElements"><h4 class="footerLinks">our sites</h4></a>
+										</div>
+										<div class="FooterLinksElementsContainer">
+											<a title="employment" href="/career-and-employment/qxc12033" class="FooterLinksElements"><h4 class="footerLinks">employment</h4></a>
+										</div>
+										<div class="FooterLinksElementsContainer">
+											<a title="giving" href="/drugstore-com-foundation/qxc293436" class="FooterLinksElements"><h4 class="footerLinks">giving</h4></a>
+										</div>
+										<div class="FooterLinksElementsContainer">
+											<a title="going green" href="/green-commitment/qxc149848" class="FooterLinksElements"><h4 class="footerLinks">going green</h4></a>
+										</div>
+										<div class="FooterLinksElementsContainer">
+											<a title="affiliate program" href="/home/qxc14230" class="FooterLinksElements"><h4 class="footerLinks">affiliate program</h4></a>
+										</div>
+										<div class="FooterLinksElementsContainer">
+											<a title="California Transparency Act" href="/california-transparency-act/qxc291473" class="FooterLinksElements"><h4 class="footerLinks">California Transparency Act</h4></a>
+										</div>
+										<div class="FooterLinksElementsContainer">
+											<a title="accessibility info" href="/accesibility-information/qxc309248" class="FooterLinksElements"><h4 class="footerLinks">accessibility info</h4></a>
+										</div>
+										<div class="FooterLinksElementsContainer">
+											<a title="staff picks" href="/our-product-picks/qxc283136" class="FooterLinksElements"><h4 class="footerLinks">staff picks</h4></a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="foottile">
+								<div class="FooterLinksColumnBody">
+									<div class="FooterLinksColumnHeader">
+										services
+									</div>
+									<div class="FooterLinks">
+										<div class="FooterLinksElementsContainer">
+											<a title="popular searches" href="/search/samplesearch.asp?catid=158255&amp;trx=FSVC&amp;trxp1=60&amp;trxp2=2&amp;trxp3=158255&amp;trxp4=2" class="FooterLinksElements"><h4 class="footerLinks">popular searches</h4></a>
+										</div>
+										<div class="FooterLinksElementsContainer">
+											<a title="product requests" href="/product-requests/qxc112165" class="FooterLinksElements"><h4 class="footerLinks">product requests</h4></a>
+										</div>
+										<div class="FooterLinksElementsContainer">
+											<a title="your list" href="/your-list/qxc10782" class="FooterLinksElements"><h4 class="footerLinks">your list</h4></a>
+										</div>
+										<div class="FooterLinksElementsContainer">
+											<a title="destination health" href="/destination-health/qxc296906" class="FooterLinksElements"><h4 class="footerLinks">destination health</h4></a>
+										</div>
+										<div class="FooterLinksElementsContainer">
+											<a title="gift center" href="/gifts-and-flowers/qxg13888-0" class="FooterLinksElements"><h4 class="footerLinks">gift center</h4></a>
+										</div>
+										<div class="FooterLinksElementsContainer">
+											<a title="video library" href="http://video.drugstore.com?catid=316441&amp;trx=FSVC&amp;trxp1=60&amp;trxp2=2&amp;trxp3=316441&amp;trxp4=2" class="FooterLinksElements"><h4 class="footerLinks">video library</h4></a>
+										</div>
+										<div class="FooterLinksElementsContainer">
+											<a title="expert picks" href="/expert-picks/qxc304041" class="FooterLinksElements"><h4 class="footerLinks">expert picks</h4></a>
+										</div>
+										<div class="FooterLinksElementsContainer">
+											<a title="shop by brand" href="/templates/brand/sbb.asp?catid=316440&amp;trx=FSVC&amp;trxp1=60&amp;trxp2=2&amp;trxp3=316440&amp;trxp4=2" class="FooterLinksElements"><h4 class="footerLinks">shop by brand</h4></a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="foottile">
+								<div class="FooterLinksColumnBody">
+									<div class="FooterLinksColumnHeader">
+										support
+									</div>
+									<div class="FooterLinks">
+										<div class="FooterLinksElementsContainer">
+											<a title="order status" href="/user/order_status.asp?catid=91375&amp;trx=FSVC&amp;trxp1=60&amp;trxp2=2&amp;trxp3=91375&amp;trxp4=2" class="FooterLinksElements"><h4 class="footerLinks">order status</h4></a>
+										</div>
+										<div class="FooterLinksElementsContainer">
+											<a title="store directory" href="/morestores.asp?catid=13653&amp;trx=FSVC&amp;trxp1=60&amp;trxp2=2&amp;trxp3=13653&amp;trxp4=2" class="FooterLinksElements"><h4 class="footerLinks">store directory</h4></a>
+										</div>
+										<div class="FooterLinksElementsContainer">
+											<a title="return policy" onclick="javascript:window.open('http://drugstore.custhelp.com/cgi-bin/drugstore.cfg/php/enduser/std_adp.php?p_faqid=190&amp;catid=283996&amp;trx=FSVC&amp;trxp1=60&amp;trxp2=2&amp;trxp3=283996&amp;trxp4=2', 'microsite_footer_popup');" href="#" class="FooterLinksElements"><h4 class="footerLinks">return policy</h4></a>
+										</div>
+										<div class="FooterLinksElementsContainer">
+											<a title="help" onclick="javascript:window.open('http://drugstore.custhelp.com/app/home?catid=283997&amp;trx=FSVC&amp;trxp1=60&amp;trxp2=2&amp;trxp3=283997&amp;trxp4=2', 'microsite_footer_popup');" href="#" class="FooterLinksElements"><h4 class="footerLinks">help</h4></a>
+										</div>
+										<div class="FooterLinksElementsContainer">
+											<a title="shipping information" onclick="javascript:window.open('http://drugstore.custhelp.com/cgi-bin/drugstore.cfg/php/enduser/std_adp.php?p_faqid=189&amp;catid=283998&amp;trx=FSVC&amp;trxp1=60&amp;trxp2=2&amp;trxp3=283998&amp;trxp4=2', 'microsite_footer_popup');" href="#" class="FooterLinksElements"><h4 class="footerLinks">shipping information</h4></a>
+										</div>
+										<div class="FooterLinksElementsContainer">
+											<a title="contact us" onclick="javascript:window.open('http://drugstore.custhelp.com/cgi-bin/drugstore.cfg/php/enduser/std_adp.php?p_faqid=597&amp;catid=283999&amp;trx=FSVC&amp;trxp1=60&amp;trxp2=2&amp;trxp3=283999&amp;trxp4=2', 'microsite_footer_popup');" href="#" class="FooterLinksElements"><h4 class="footerLinks">contact us</h4></a>
+										</div>
+										<div class="FooterLinksElementsContainer">
+											<a title="drugstore.com dollars" href="/drugstore-com-dollars/qxc33476" class="FooterLinksElements"><h4 class="footerLinks">drugstore.com dollars</h4></a>
+										</div>
+										<div class="FooterLinksElementsContainer">
+											<a title="APO/FPO/DPO shipping" onclick="javascript:window.open('http://drugstore.custhelp.com/cgi-bin/drugstore.cfg/php/enduser/std_adp.php?p_faqid=2633&amp;catid=284000&amp;trx=FSVC&amp;trxp1=60&amp;trxp2=2&amp;trxp3=284000&amp;trxp4=2', 'microsite_footer_popup');" href="#" class="FooterLinksElements"><h4 class="footerLinks">APO/FPO/DPO shipping</h4></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!--1-->
+
+					<div class="foot_right">
+
+						<tr class="FooterRow">
+							<td valign="top">
+							<div class="FooterPaymentButtons">
+								<table width="100%" border="0" cellspacing="0" cellpadding="0" id="PayButtons">
+									<tbody>
+										<tr valign="top" width="100%">
+											<td width="100%" align="left" id="tdPayButtons">
+											<div style="float:left;padding-right:10px;"><img border="0" class="FooterPaymentButton" title="PayPal" alt="PayPal" src="http://www.paypal.com/en_US/i/logo/PayPal_mark_37x23.gif">
+											</div>
+											<div style="float:left;">
+												<a onclick="JavaScript:window.open('https://www.securecheckout.billmelater.com/paycapture-content/fetch?hash=P8M2938N&amp;content=/bmlweb/tk60rollingiw.html','billmelater','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=700, height=750');" href="JavaScript:void(0);"><img border="0" style="vertical-align:top;" title="Bill Me Later" alt="Bill Me Later" src=land_files/button_bml.gif"></a></div>   </td></tr></tbody></table></div><div class="FooterVipps"><a href="http://vipps.nabp.net/verify.asp"><img src="land_files/button_vipps.gif" alt="Click to verify drugstore.com"  title="Click to verify drugstore.com"></a><br></div><div class="FooterTruste"><a target="_blank" title="TRUSTe online privacy certification" href="http://privacy-policy.truste.com/click-with-confidence/wps/en/www.drugstore.com/seal_m"><img alt="TRUSTe online privacy certification" src="land_files/button_truste.gif" style="border: none"></a></div>
+
+												<div align="center"><a href="http://www.aboutads.info/consumers" target="_blank"><img border="0" alt="Ad Choice" src="land_files/icon_adchoice.gif"></a></div></td>
+
+												</div>
+												<div class="gap"></div>
+												<td style="width:10px;">&nbsp;</td><td colspan="5"><div class="FooterDisclaimer">
+												<img alt="Drugstore Legal Note " src="land_files/hp_legal.gif"></div><div class="FooterTermsOfUse"><span class="FooterTermsOfUseColumn"><a rel="nofollow" title="Terms of Use" onclick="javascript:window.open('http://drugstore.custhelp.com/cgi-bin/drugstore.cfg/php/enduser/std_adp.php?p_faqid=512','dshelp','width=800,height=550,scrollbars=yes,resizable=yes,status=no,menubar=yes,toolbar=no,location=no');return false;" target="dshelp" href="http://drugstore.custhelp.com/cgi-bin/drugstore.cfg/php/enduser/std_adp.php?p_faqid=512" id="help_url_copyright" class="FooterTermsOfUseColumn">Terms of Use</a></span><span class="FooterTermsOfUseSeperator"> | </span><span class="FooterTermsOfUseColumn"><a rel="nofollow" title="Privacy Policy" href="http://www.drugstore.com/category.asp?catid=148674" id="help_url_privacy" class="FooterTermsOfUseColumn">Privacy Policy</a></span><span class="FooterTermsOfUseSeperator"> | </span><span class="FooterTermsOfUseColumn"><a rel="nofollow" href="http://www.drugstore.com/npp" class="FooterTermsOfUseColumn">Pharmacy Notice of Privacy Practices</a></span>
+											</div>
+											<div class="FooterCopyRight">
+												Copyright &copy; 1999-2013 drugstore.com, inc. All rights reserved.
+												<br>
+												411 108th Ave NE, Suite 1600, Bellevue, WA 98004
+											</div>
+											<div>
+												<div align="left" style="width:100%;">
+													<input type="button" onclick="document.location.href='/affiliate/content.asp?trx=XMLRSS&amp;trxp1=60'" title="XML/RSS" value="XML/RSS" id="btnWS" name="btnWS" class="RSSBtn">
+												</div>
+											</div></td>
+										</tr>
+										<!--2-->
+
+										<!--footer-->
+
+							</div>
+					</div>
+
+	</body>
+</html>
+

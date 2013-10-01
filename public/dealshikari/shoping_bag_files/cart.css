@@ -1,0 +1,666 @@
+﻿/* Shopping Bag */
+
+#BagCntr
+{
+	position: relative;
+	width: 570px;
+}
+
+	#BagCntr .title
+	{
+		margin-top: 10px;
+		margin-bottom: 10px;
+		padding: 5px;
+		border-bottom: 1px solid #6e6565;
+		border-top: 1px solid #6e6565;
+	}
+
+	#BagCntr .AlertCntr
+	{
+		width: 96%;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
+	#BagCntr #TblBagErr
+	{
+		width: 100%;
+		background-color: #FFFFFF;
+	}
+
+	#BagCntr #EmptyBagHdr
+	{
+		margin: 10px 0px 20px 0px;
+		padding-left: 15px;
+	}
+
+		#BagCntr #EmptyBagHdr h4
+		{
+			display: inline;
+		}
+
+		#BagCntr #EmptyBagHdr a
+		{
+			padding-left: 20px;
+		}
+
+	#BagCntr #TblCartItemsCntr
+	{
+		width: 570px;
+		margin-top: 10px;
+	}
+
+		#BagCntr #TblCartItemsCntr #TblAutoDel
+		{
+			width: 100%;
+			margin-top: 10px;
+		}
+/* Automatic Shipping Caption - Beuaty Redesign */
+.btycaptionwhite
+{
+	height: 18px;
+	padding-left: 7px;
+	color: #FFFFFF;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 89%;
+}
+
+.btycaptionblack
+{
+	height: 18px;
+	padding-left: 7px;
+	color: #000000;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 89%;
+}
+
+#BagCntr #TblCartItemsCntr #TblAutoDel h4
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+#BagCntr #tblOrderItems
+{
+	width: 100%;
+}
+
+	#BagCntr #tblOrderItems input
+	{
+		width: 30px;
+		text-align: center;
+	}
+
+	#BagCntr #tblOrderItems .price
+	{
+		font-weight: bold;
+	}
+
+#BagCntr #TblCCostsAlt
+{
+	width: 100%;
+}
+
+#BagCntr #SavingsCntr
+{
+	padding: 10px;
+	margin-top: 15px;
+}
+
+	#BagCntr #SavingsCntr #TblCouponCntr
+	{
+		width: 100%;
+	}
+
+#BagCntr #TblCartXsell
+{
+	width: 100%;
+}
+
+#BagCntr h4
+{
+	padding-top: 10px;
+}
+
+#BagCntr #tblOrderItems h4
+{
+	padding: 0px 0px 0px 0px;
+}
+
+#BagCntr #XSellYL
+{
+	margin: 0px 10px 15px 0px;
+}
+
+#BagCntr #XSellYLBeauty
+{
+	margin: 0px 10px 15px 0px;
+	width: 550px;
+}
+
+#BagCntr #TblXSellDept
+{
+	width: 100%;
+}
+
+	#BagCntr #TblXSellDept td
+	{
+		vertical-align: top;
+	}
+
+#BagCntr #TblCheckOutBtnRow
+{
+	width: 100%;
+}
+
+	#BagCntr #TblCheckOutBtnRow th
+	{
+		width: 500px;
+		text-align: right;
+	}
+
+	#BagCntr #TblCheckOutBtnRow td, #BagCntr #TblCheckOutBtnRow th
+	{
+		font-weight: bold;
+		font-size: 120%;
+	}
+
+	#BagCntr #TblCheckOutBtnRow td
+	{
+		text-align: left;
+		padding-left: 10px;
+	}
+
+	#BagCntr #TblCheckOutBtnRow #BtnCntr
+	{
+		padding-top: 10px;
+		text-align: right;
+	}
+
+		#BagCntr #TblCheckOutBtnRow #BtnCntr #CheckBtn
+		{
+			margin-left: 15px;
+		}
+
+#BagCntr .price
+{
+	font-weight: bold;
+}
+
+/*Shopping Bag - BRP Content*/
+#BagCntr #TblBRPCheckOutBtnRow
+{
+	width: 550px;
+}
+
+	#BagCntr #TblBRPCheckOutBtnRow th
+	{
+		width: 500px;
+		text-align: right;
+	}
+
+	#BagCntr #TblBRPCheckOutBtnRow td, #BagCntr #TblBRPCheckOutBtnRow th
+	{
+		font-size: 120%;
+	}
+
+	#BagCntr #TblBRPCheckOutBtnRow td
+	{
+		text-align: left;
+		padding-left: 10px;
+	}
+
+	#BagCntr #TblBRPCheckOutBtnRow #BtnCntr
+	{
+		padding-top: 10px;
+		text-align: right;
+	}
+
+		#BagCntr #TblBRPCheckOutBtnRow #BtnCntr #CheckBtn
+		{
+			margin-left: 15px;
+		}
+
+#BagCntr #tblBrpItems
+{
+	width: 550px;
+	margin-top: 12px;
+}
+
+	#BagCntr #tblBrpItems input
+	{
+		width: 30px;
+		text-align: center;
+	}
+
+	#BagCntr #tblBrpItems .price
+	{
+		font-weight: bold;
+	}
+
+#BagCntr #TblShoppingBagHeader
+{
+	width: 550px;
+	height: 25px;
+	border-color: #676767;
+	border-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+}
+
+#BagCntr #TblShoppingBagHeadertd
+{
+	padding-left: 13px;
+	font-size: 16pt;
+	font-family: Arial;
+	font-weight: bold;
+	color: #666666;
+}
+
+#BagCntr #TblEmptyShoppingBagHeader
+{
+	width: 750px;
+	height: 25px;
+	border-color: #676767;
+	border-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+}
+
+#BagCntr #TblShoppingBagPageHeader
+{
+	width: 550px;
+	height: 50px;
+	border-width: 1px;
+	border-top-style: solid;
+	border-color: #6e6565;
+}
+
+#BagCntr #TblEmptyShoppingBagPageHeader
+{
+	width: 750px;
+	height: 50px;
+	border-width: 1px;
+	border-top-style: solid;
+	border-color: #6e6565;
+	vertical-align: middle;
+}
+
+#BagCntr #TblShoppingBagPageHeadertd
+{
+	font-size: 20px;
+	color: #999999;
+}
+
+#BRPContent #TblBRPPageHeader
+{
+	height: 23px;
+	width: 550px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #666666;
+	padding-bottom: 16px;
+}
+
+	#BRPContent #TblBRPPageHeader input
+	{
+		width: 2.6em;
+		text-align: center;
+	}
+
+	#BRPContent #TblBRPPageHeader .price
+	{
+		font-weight: bold;
+	}
+
+#BRPContent #TblBRPPageItems
+{
+	height: 23px;
+	padding-left: 10px;
+	color: #616161;
+	font-size: 89%;
+	font-weight: bold;
+	font-family: Arial;
+	background-color: #E9E9E9;
+	border-width: 1px;
+	border-color: #666666;
+}
+
+.UpdateBeautyItemQty
+{
+	width: 550px;
+	height: 20px;
+	font-size: 89%;
+	font-family: Arial;
+	padding-top: 25px;
+	padding-bottom: 10px;
+	margin-top: 0px;
+}
+
+.UpdateCartItemQty
+{
+	padding: 10px;
+	margin-top: 0px;
+}
+
+.TblCartItemsHeader
+{
+	padding: 2;
+	font-size: 89%;
+	font-weight: bold;
+}
+
+.TblCartBeautyItemsHeader
+{
+	height: 18px;
+	font-size: 89%;
+	font-family: Arial;
+	color: #FFFFFF;
+	font-weight: bold;
+	background-color: #999999;
+}
+
+.TblCartBeautyItemsHeaderRow
+{
+	width: 325px;
+	height: 18px;
+	padding-left: 10px;
+	color: #FFFFFF;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.TblCartBeautyItemsHeaderColumn
+{
+	width: 75px;
+	height: 18px;
+	padding: 2px;
+	vertical-align: middle;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+
+.TblCartGWPItemsHeader
+{
+	height: 20px;
+	font-size: 89%;
+	padding-left: 10px;
+	border-width: 1px;
+	border-color: #676767;
+	border-left-style: solid;
+	border-right-style: solid;
+	border-top-style: solid;
+}
+
+.TblCartGWPItemsHeaderRow
+{
+	height: 18px;
+	font-size: 89%;
+	font-family: Arial;
+	font-weight: bold;
+	background-color: #999999;
+}
+
+.TblCartGWPItemsHeaderColumn
+{
+	width: 325px;
+	height: 18px;
+	padding-left: 10px;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+
+.TblItemsHeaderRow
+{
+	padding: 2;
+	font-size: 89%;
+}
+
+.BeautyPromoCode
+{
+	font-size: 89%;
+	font-weight: bold;
+	width: 30%;
+}
+
+.BeautyPromoRedeem
+{
+	font-size: 100%;
+	font-weight: bold;
+	font-family: Arial;
+	Color: #848484;
+	padding-left: 6px;
+}
+
+.ProductBannerRow
+{
+	height: 23px;
+}
+
+.ProductBannerTitle
+{
+	width: 550px;
+	height: 23px;
+	border-color: #676767;
+	border-width: 1px;
+	font-size: 89%;
+	font-weight: bold;
+	vertical-align: top;
+	color: #616161;
+	padding-left: 10px;
+	border-left-style: solid;
+	border-right-style: solid;
+	border-top-style: solid;
+	text-transform: uppercase;
+}
+
+.BeautySTEHeaderTitle
+{
+	height: 20px;
+	font-size: 89%;
+	background-color: #E9E9E9;
+	padding: 10px;
+	font-family: Arial;
+}
+
+.BeautySTEHeaderRow
+{
+	HEIGHT: 20px;
+}
+
+.BeautyShipMessageTitle
+{
+	border: 1px solid dark gray;
+	border-width: 1px;
+	padding: 1;
+	width: 100%;
+}
+
+.ShipMessageTxtColumn
+{
+	padding: 7px;
+	vertical-align: middle;
+}
+
+.ShipMessageTxt
+{
+	font-size: 8pt;
+	font-family: Arial;
+	padding: 6px;
+}
+
+.BeautySTETblHeader
+{
+	width: 550px;
+	padding: 0px;
+}
+
+.BeautySTETblHeaderRow
+{
+	height: 23px;
+	font-size: 89%;
+	background-color: #E9E9E9;
+	font-family: Arial;
+	font-weight: bold;
+}
+
+.BeautySTETblHeaderColumn
+{
+	padding-left: 10px;
+	border-width: 1px;
+	border-color: #676767;
+	border-style: solid;
+}
+
+.BeautySTETblShipMethod
+{
+	font-size: 89%;
+	font-family: Arial;
+	padding: 5px;
+}
+
+.BeautySTEShipMethods
+{
+	WIDTH: 140px;
+	color: #000000;
+}
+
+.BeautySTEZipCode
+{
+	WIDTH: 80px;
+}
+
+.BeautySTEZipCodeTxt
+{
+	WIDTH: 80px;
+	color: #000000;
+	font-size: 89%;
+}
+
+.BeautySTEDisclaimer
+{
+	width: 550px;
+	font-style: italic;
+}
+
+.Descerror
+{
+	color: red;
+}
+
+.Surcharge
+{
+	border: 1px dashed gray;
+	padding: 1;
+	width: 100%;
+}
+
+.SurchDivision
+{
+	background-color: #DCDCDC;
+}
+
+.Removealert
+{
+	color: #FF0000;
+	font-weight: bold;
+}
+
+.TitleBold
+{
+	font-weight: bold;
+}
+
+.TitleNormal
+{
+	font-weight: bold;
+}
+
+.Lnkremove
+{
+	font-size: 100%;
+	color: #CC66CC;
+}
+
+/* Place Order */
+#PlaceOrderCntr
+{
+	width: 540px;
+}
+
+	#PlaceOrderCntr .title
+	{
+		margin: 30px 0px 20px 0px;
+		font-size: 160%;
+		text-align: left;
+	}
+
+	#PlaceOrderCntr #TblPlaceOrder
+	{
+		width: 100%;
+	}
+
+		#PlaceOrderCntr #TblPlaceOrder #PaymentOptions, #TblPlaceOrder #ShippingOptions
+		{
+			vertical-align: middle;
+		}
+
+		#PlaceOrderCntr #TblPlaceOrder hr
+		{
+			width: 100%;
+			text-align: left;
+			margin-left: 0px;
+			margin-right: 0px;
+			height: 1px;
+			border-bottom: 0px;
+		}
+
+		#PlaceOrderCntr #TblPlaceOrder #ShippingBlurb .alert
+		{
+			color: #FF0000;
+		}
+
+		#PlaceOrderCntr #TblPlaceOrder #ShippingOptions #TblShippingOptions #ShipAddr, #TblPlaceOrder #ShippingOptions #TblShippingOptions #ShipOptions
+		{
+			width: 50%;
+			vertical-align: top;
+		}
+
+		#PlaceOrderCntr #TblPlaceOrder #CartItemsHeadCntr
+		{
+			margin-top: 10px;
+		}
+
+			#PlaceOrderCntr #TblPlaceOrder #CartItemsHeadCntr #TblCartItemsHead
+			{
+				width: 570px;
+			}
+
+				#PlaceOrderCntr #TblPlaceOrder #CartItemsHeadCntr #TblCartItemsHead #ChgQty
+				{
+					text-align: right;
+				}
+
+		#PlaceOrderCntr #TblPlaceOrder #TblCartItems
+		{
+			width: 100%;
+		}
+
+			#PlaceOrderCntr #TblPlaceOrder #TblCartItems #tblOrderItems, #TblPlaceOrder #TblCartItems #TblCCostsAlt
+			{
+				width: 100%;
+			}
+
+				#PlaceOrderCntr #TblPlaceOrder #TblCartItems #tblOrderItems .price
+				{
+					font-weight: bold;
+				}
+
+	#PlaceOrderCntr #Questions
+	{
+		padding-top: 40px;
+		padding-bottom: 15px;
+		text-align: center;
+	}

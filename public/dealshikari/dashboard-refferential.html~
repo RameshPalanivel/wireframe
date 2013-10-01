@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Deal Shikari</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet" media="screen">
+<link rel="stylesheet" media="screen" type="text/css" href="./land_files">
+
+  </head>
+  <body>
+
+<div class="container bs-docs-container">
+
+
+
+
+  <!--  <h1>Hello, world!</h1>-->
+  <div class="navbar">
+  <a class="navbar-brand" href="#">DealShikari</a>
+  <ul class="nav navbar-nav">
+     
+    <li class="active"><a href="dashboard-refferential.html">Home</a></li>
+    <li><a href="referential_agent.html">Referential Agent List</a></li>
+    <!--<li><a href="#">My Profile</a></li>-->
+    <li><a href="enrolled_stores.html">Enrolled Stores</a></li>
+<li><a href="sales_commission.html">Sales & Commission</a></li>
+<!--<li><a href="reviews.html">New Enrollment</a></li>-->
+<!--<li><a href="invoices.html">Invoices</a></li>-->
+
+  </ul>
+ </div>
+
+<!--<div class="btn-group" style="margin-bottom:12px;">
+  <a href="new_store.html"><button type="button" class="btn btn-default dropdown-toggle" >
+    New Pharmacy 
+  </button></a>
+</div>-->
+
+<div class="jumbotron" style="padding: 10px 38px;background-color:  #C4CDE0;">
+        <h3>Dash Board </h3>
+        <p class="lead"> Total Number of Enrolled Stores : 200</p>
+        <p class="lead"> Total Amount of Sales Form Enrolled Stores in : Rs 4,25,567.00</p>
+        <p class="lead"> My Commission: Rs 3050.00</p>
+       <!-- <p><a href="#" class="btn btn-large btn-success">Sign up today</a></p>-->
+      </div>
+
+
+<!--<div class="row">
+    <div class="col-lg-8" style="border:1px solid red;">
+       <label for="inputEmail" class="col-lg-2 control-label">Total Stores Enrolled :</label>
+    <p><label> Rs:</label>95000.00  2609 Nos  </p>            
+
+
+    </div>
+  <div class="col-lg-4" style="border:1px solid red;">4</div>
+</div>-->
+
+
+
+    <div id="footer" style="border:1px solid #EEEEEE;background-color:#EEEEEE;">
+      <div class="container bs-docs-container">
+        <p class="text-muted credit"> <a href="http://www.amaanee.com">Powered by DealShikari</a> <!--and <a href="http://ryanfait.com/sticky-footer/">Ryan Fait--></a>.</p>
+      </div>
+    </div>
+
+
+</div> <!---End tag of this col-12 col-lg-8--->
+
+</div>
+
+
+
+
+
+
+    <!-- JavaScript plugins (requires jQuery) -->
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="dist/js/bootstrap.min.js"></script>
+
+    <!-- Optionally enable responsive features in IE8 -->
+    <script src="dist/js/respond.js"></script>
+
+  </body>
+</html>
+
